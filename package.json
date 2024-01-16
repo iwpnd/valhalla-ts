@@ -3,7 +3,9 @@
   "version": "1.0.0-alpha.0",
   "description": "A nodejs client and helper utilities for valhalla routing engine",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -15,7 +17,11 @@
   "author": "B. Ramser <iwpnd@posteo.de>",
   "contributors": [],
   "license": "MIT",
-  "keywords": ["valhalla", "routing", "http-client"],
+  "keywords": [
+    "valhalla",
+    "routing",
+    "http-client"
+  ],
   "engines": {
     "node": ">=20.x",
     "yarn": "^1.22.x"
@@ -36,7 +42,9 @@
     "down": "docker-compose down",
     "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/geojson": "7946.0.13"
+  },
   "devDependencies": {
     "@commitlint/cli": "18.4.4",
     "@commitlint/config-conventional": "18.4.4",
@@ -67,6 +75,9 @@
     "typescript": "5.3.3"
   },
   "lint-staged": {
-    "*.ts": ["eslint --fix", "prettier --write"]
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
