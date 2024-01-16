@@ -43,7 +43,8 @@
     "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'"
   },
   "dependencies": {
-    "@types/geojson": "7946.0.13"
+    "@types/geojson": "7946.0.13",
+    "undici": "6.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "18.4.4",
