@@ -18,10 +18,15 @@ const isJSON = (contentType: string): boolean => {
     return pattern.test(contentType);
 };
 
-export class HttpClient {
+export class RestClient {
     private readonly url: string;
 
     private readonly options?: RequestOptions;
+
+    constructor(url: string, options?: RequestOptions) {
+        this.url = url;
+        this.options = options;
+    }
 
     async request<T extends object | null = object>(
         path: string,
@@ -30,7 +35,7 @@ export class HttpClient {
         const requestPath = resolveParamsPlaceholder(path, options?.params);
 
         const requestQuery = options?.query
-            ? `${qs.stringify(options.query)}`
+            ? `?${qs.stringify(options.query)}`
             : '';
 
         const requestBody =
@@ -45,7 +50,7 @@ export class HttpClient {
             ...options?.headers,
         };
 
-        const requestURL = `${this.url}/${requestPath}${requestQuery}`;
+        const requestURL = `${this.url}${requestPath}${requestQuery}`;
         const response = await fetch(requestURL, {
             ...this.options,
             method: 'GET',
@@ -55,8 +60,9 @@ export class HttpClient {
         });
 
         let content: T | null = null;
-        const contentType = response.headers.get('content-type');
-        if (contentType && isJSON(contentType)) {
+        const contentType = response.headers.get('Content-Type');
+
+        if (contentType && isJSON(contentType.toLowerCase())) {
             content = (await response.json()) as T;
         }
 
