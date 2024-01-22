@@ -1,6 +1,6 @@
 import { MockAgent, setGlobalDispatcher } from 'undici';
 import { RequestError } from './client';
-import { TurnByTurnRouteRequest } from './types';
+import { TripResponse, TurnByTurnRouteRequest } from './types';
 import { Valhalla } from './valhalla';
 
 const mockAgent = new MockAgent({ connections: 1 });
@@ -70,9 +70,24 @@ describe('valhalla', () => {
             ],
         };
         it('should request a route', async () => {
-            const resp = {
+            const resp: TripResponse = {
                 trip: {
                     locations: req.locations,
+                    legs: [
+                        {
+                            shape: '',
+                            summary: {
+                                has_time_restrictions: false,
+                                min_lat: 1,
+                                min_lon: 1,
+                                max_lat: 2,
+                                max_lon: 2,
+                                time: 1337,
+                                length: 1337,
+                                cost: 10,
+                            },
+                        },
+                    ],
                     summary: {
                         has_time_restrictions: false,
                         min_lat: 1,
@@ -84,6 +99,7 @@ describe('valhalla', () => {
                         cost: 10,
                     },
                     status_message: 'works, hu',
+                    status: 200,
                     units: 'kilometers',
                     language: 'en-US',
                 },
