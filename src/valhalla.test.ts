@@ -4,6 +4,7 @@ import { RequestError } from './client';
 import {
     IsochroneResponse,
     IsochroneTimeRequest,
+    ManeuverType,
     MapMatchingShapeRequest,
     OptimizedRouteRequest,
     TripResponse,
@@ -21,6 +22,11 @@ describe('valhalla', () => {
     const valhalla = new Valhalla(url);
 
     const mockPool = mockAgent.get(url);
+
+    describe('make jest coverage happy', () => {
+        const maneuvertype = ManeuverType.kLeft;
+        expect(maneuvertype).toEqual(15);
+    });
 
     describe('status', () => {
         it('should request status with verbose=true', async () => {

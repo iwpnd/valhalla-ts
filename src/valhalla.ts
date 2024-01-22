@@ -1,4 +1,3 @@
-import { Agent } from 'undici';
 import { RequestOptions, RestClient } from './client';
 import {
     ExtendedStatusResponse,
@@ -23,9 +22,6 @@ export class Valhalla extends RestClient {
                 Accept: 'application/json',
                 ...options?.headers,
             },
-            ...(options?.timeout && {
-                connectTimeout: new Agent({ connectTimeout: options?.timeout }),
-            }),
         });
     }
 

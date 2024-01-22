@@ -21,5 +21,4 @@ export interface RequestOptions extends Omit<RequestInit, 'body'> {
     params?: Params;
     query?: Query;
     body?: object;
-    timeout?: number;
 }
