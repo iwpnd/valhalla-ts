@@ -31,24 +31,37 @@
   "rules": {
     "import/prefer-default-export": "off",
     "import/extensions": ["error", { "js": "never", "ts": "never" }],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts"] }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.ts", "**/__fixtures__/*"] }
+    ],
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal", ["index", "sibling", "parent", "object"]],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["index", "sibling", "parent", "object"]
+        ],
         "pathGroupsExcludedImportTypes": ["builtin"],
-        "pathGroups": [{ "pattern": "~/**", "group": "external", "position": "after" }],
+        "pathGroups": [
+          { "pattern": "~/**", "group": "external", "position": "after" }
+        ],
         "alphabetize": { "order": "asc", "caseInsensitive": true }
       }
     ],
     "no-underscore-dangle": ["error", { "allowAfterThis": true }],
-    "sort-imports": ["error", {
-      "ignoreCase": false,
-      "ignoreDeclarationSort": true,
-      "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-      "allowSeparatedGroups": false
-  }],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+      }
+    ],
     "no-shadow": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-shadow": ["error"]
