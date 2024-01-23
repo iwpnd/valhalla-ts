@@ -14,7 +14,8 @@ const resolveParamsPlaceholder = (path: string, params?: Params): string => {
 };
 
 const isJSON = (contentType: string): boolean => {
-    const pattern = /^application\/(vnd\.geo\+json|geo\+json|json)$/i;
+    const pattern =
+        /^application\/(vnd\.geo\+json|geo\+json|json|json;charset=utf-8)$/i;
     return pattern.test(contentType);
 };
 
