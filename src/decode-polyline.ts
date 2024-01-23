@@ -18,7 +18,7 @@ export const decodePolyline = (
 ): GeoJSON.Position[] => {
     let index = 0;
     let lat = 0;
-    let lng = 0;
+    let lon = 0;
     let result = 0;
     let shift = 0;
     let byte = null;
@@ -54,9 +54,9 @@ export const decodePolyline = (
         dLongitude = result & 1 ? ~(result >> 1) : result >> 1;
 
         lat += dLatitude;
-        lng += dLongitude;
+        lon += dLongitude;
 
-        coordinates.push([lng / factor, lat / factor]);
+        coordinates.push([lon / factor, lat / factor]);
     }
 
     return coordinates;
