@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  valhalla:
+    image: ghcr.io/iwpnd/valhalla-andorra:latest
+    container_name: valhalla_andorra
+    environment:
+      - server_threads=4
+      - force_rebuild=false
+      - build_tar=false
+      - build_admin=false
+      - use_tiles_ignore_pbf=true
+    ports:
+      - 8002:8002
