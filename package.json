@@ -3,9 +3,7 @@
   "version": "1.0.0-alpha.0",
   "description": "A nodejs client and helper utilities for valhalla routing engine",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -17,11 +15,7 @@
   "author": "B. Ramser <iwpnd@posteo.de>",
   "contributors": [],
   "license": "MIT",
-  "keywords": [
-    "valhalla",
-    "routing",
-    "http-client"
-  ],
+  "keywords": ["valhalla", "routing", "http-client"],
   "engines": {
     "node": ">=20.x",
     "yarn": "^1.22.x"
@@ -35,7 +29,7 @@
     "build:watch": "tsc --watch",
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "lint": "eslint --ext .ts ./src",
-    "test": "jest --runInBand --verbose --coverage",
+    "test": "jest --runInBand --verbose --testMatch '**/*test.ts' --coverage",
     "format": "prettier --write src/{*.ts,**/*.ts}",
     "u": "yarn upgrade-interactive --latest",
     "up": "docker-compose up",
@@ -78,9 +72,6 @@
     "typescript": "5.3.3"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.ts": ["eslint --fix", "prettier --write"]
   }
 }
