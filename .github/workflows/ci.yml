@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: ghcr authentication
-        run: echo $GITHUB_TOKEN | docker login ghcr.io -u iwpnd --password-stdin
+      - name: Log in to registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
       - name: start valhalla
         run: docker compose up
       - name: yarn cache
