@@ -38,15 +38,14 @@ export class Valhalla extends RestClient {
      *
      * @returns {@link TripResponse}
      */
-    async route<T extends Trip>(
-        query: TurnByTurnRouteRequest
-    ): Promise<TripResponse<T>> {
+    async route<T extends Trip>(query: TurnByTurnRouteRequest): Promise<T> {
         const options = {
             method: 'POST',
             body: query,
         };
 
-        return this.request<TripResponse<T>>('/route', options);
+        const { trip } = await this.request<TripResponse<T>>('/route', options);
+        return trip;
     }
 
     /**

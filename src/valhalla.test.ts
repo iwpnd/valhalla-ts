@@ -97,7 +97,7 @@ describe('valhalla', () => {
                 })
                 .reply(200, resp);
 
-            await expect(valhalla.route(req)).resolves.toEqual(resp);
+            await expect(valhalla.route(req)).resolves.toEqual(trip);
         });
 
         it('should throw on error', async () => {
