@@ -4,16 +4,16 @@
 import type * as GeoJSON from 'geojson';
 
 /**
- * Decode a valhalla shape to an array of {@link GeoJSON.Position}
+ * Decode a valhalla polyline to an array of {@link GeoJSON.Position}
  *
- * @param {String} shape
+ * @param {String} polyline
  * @param {Number} precision = 6
  * @returns {@link GeoJSON.Position[]}
  *
  * @see https://github.com/DennisOSRM/Project-OSRM-Web/blob/master/WebContent/routing/OSRM.RoutingGeometry.js
  */
 export const decodePolyline = (
-    shape: string,
+    polyline: string,
     precision = 6
 ): GeoJSON.Position[] => {
     let index = 0;
@@ -28,12 +28,12 @@ export const decodePolyline = (
     const factor = 10 ** precision;
     const coordinates: GeoJSON.Position[] = [];
 
-    while (index < shape.length) {
+    while (index < polyline.length) {
         byte = 0x20;
         shift = 0;
         result = 0;
         while (byte >= 0x20) {
-            byte = shape.charCodeAt(index) - 63;
+            byte = polyline.charCodeAt(index) - 63;
             result |= (byte & 0x1f) << shift;
             shift += 5;
             index++;
@@ -45,7 +45,7 @@ export const decodePolyline = (
         shift = 0;
         result = 0;
         while (byte >= 0x20) {
-            byte = shape.charCodeAt(index) - 63;
+            byte = polyline.charCodeAt(index) - 63;
             result |= (byte & 0x1f) << shift;
             shift += 5;
             index++;
@@ -61,3 +61,20 @@ export const decodePolyline = (
 
     return coordinates;
 };
+
+/**
+ * Decode valhalla polyline shape to {@link GeoJSON.LineString}
+ *
+ * @param {String} polyline
+ * @param {Number} precision
+ *
+ * @returns {GeoJSON.LineString}
+ *
+ */
+export const polylineToLineString = (
+    polyline: string,
+    precision = 6
+): GeoJSON.LineString => ({
+    type: 'LineString',
+    coordinates: decodePolyline(polyline, precision),
+});
