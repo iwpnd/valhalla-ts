@@ -1,6 +1,6 @@
+import { RequestError } from '@iwpnd/rip-ts';
 import { MockAgent, setGlobalDispatcher } from 'undici';
 import { randomIsochrone, randomStatus, randomTrip } from './__fixtures__';
-import { RequestError } from './client';
 import {
     IsochroneResponse,
     IsochroneTimeRequest,

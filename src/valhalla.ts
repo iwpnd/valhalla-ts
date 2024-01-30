@@ -1,4 +1,4 @@
-import { RequestOptions, RestClient } from './client';
+import { RequestOptions, RestClient } from '@iwpnd/rip-ts';
 import {
     ExtendedStatusResponse,
     IsochroneDistanceRequest,
