@@ -43,7 +43,7 @@
     "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'"
   },
   "dependencies": {
-    "@iwpnd/rip-ts": "1.0.1",
+    "@iwpnd/rip-ts": "1.0.2",
     "@types/geojson": "7946.0.14"
   },
   "devDependencies": {
