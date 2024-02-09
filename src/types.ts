@@ -912,6 +912,9 @@ export interface BaseRouteRequest {
     locations: Location[];
     costing_options?: CostingOptions;
     directions_options?: DirectionsOptions;
+    /*
+     * none | maneuvers | instructions
+     */
     directions_type?: DirectionsType;
     /*
      * ID that is returned in route response for reference
@@ -1411,7 +1414,7 @@ export interface LegWithManeuvers<T extends Maneuver = Maneuver>
     maneuvers: T[];
 }
 
-export interface Trip<T extends BaseLeg = BaseLeg> {
+export interface Trip<T extends BaseLeg> {
     locations: Location[];
     legs: T[];
     /*
@@ -1426,8 +1429,8 @@ export interface Trip<T extends BaseLeg = BaseLeg> {
     warnings?: object;
 }
 
-export interface TripResponse<T extends Trip = Trip> {
-    trip: T;
+export interface TripResponse<T extends BaseLeg = BaseLeg> {
+    trip: Trip<T>;
 }
 
 export interface IsochroneResponseProperties {
@@ -1456,8 +1459,7 @@ export type IsochroneResponse = GeoJSON.FeatureCollection<
     IsochroneResponseProperties
 >;
 
-export type MapMatchingTraceRouteResponse<T extends Trip = Trip> =
-    TripResponse<T>;
+export type MapMatchingTraceRouteResponse<T extends BaseLeg> = TripResponse<T>;
 
 export interface MatchedPoints {
     lat: number;

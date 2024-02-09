@@ -1,5 +1,6 @@
 import { RequestOptions, RestClient } from '@iwpnd/rip-ts';
 import {
+    BaseLeg,
     ExtendedStatusResponse,
     IsochroneDistanceRequest,
     IsochroneResponse,
@@ -36,9 +37,11 @@ export class Valhalla extends RestClient {
      *
      * @param query - {@link TurnByTurnRouteRequest}
      *
-     * @returns {@link TripResponse}
+     * @returns {@link Trip}
      */
-    async route<T extends Trip>(query: TurnByTurnRouteRequest): Promise<T> {
+    async route<T extends BaseLeg = BaseLeg>(
+        query: TurnByTurnRouteRequest
+    ): Promise<Trip<T>> {
         const options = {
             method: 'POST',
             body: query,
@@ -61,7 +64,7 @@ export class Valhalla extends RestClient {
      *
      * @returns {@link TripResponse}
      */
-    async optimizedRoute<T extends Trip>(
+    async optimizedRoute<T extends BaseLeg>(
         query: OptimizedRouteRequest
     ): Promise<TripResponse<T>> {
         const options = {
@@ -108,7 +111,7 @@ export class Valhalla extends RestClient {
      *
      * @returns {@link MapMatchingTraceRouteResponse}
      */
-    async mapmatching<T extends Trip>(
+    async mapmatching<T extends BaseLeg>(
         query: MapMatchingShapeRequest | MapMatchingPolylineRequest
     ): Promise<MapMatchingTraceRouteResponse<T>> {
         const options = {
