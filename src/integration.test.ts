@@ -1,7 +1,9 @@
 import {
+    BaseLeg,
     CostingModels,
     LegWithManeuvers,
     Location,
+    Trip,
     TurnByTurnRouteRequest,
 } from './types';
 import { Valhalla } from './valhalla';
@@ -87,7 +89,7 @@ describe('integration', () => {
                     length: expect.any(Number) as Number,
                     cost: expect.any(Number) as Number,
                 },
-            });
+            } as Trip<LegWithManeuvers>);
         });
 
         it.each([
@@ -155,7 +157,7 @@ describe('integration', () => {
                     length: expect.any(Number) as Number,
                     cost: expect.any(Number) as Number,
                 },
-            });
+            } as Trip<BaseLeg>);
         });
     });
 });

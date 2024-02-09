@@ -889,6 +889,10 @@ export type Location = {
      * set of optional filters to exclude edges from the route
      */
     search_filter?: LocationSearchFilter;
+    /*
+     * The order of the location on the initial request
+     */
+    original_index?: number;
 };
 
 type OuterPolygonRing = number[][];
@@ -1414,7 +1418,7 @@ export interface LegWithManeuvers<T extends Maneuver = Maneuver>
     maneuvers: T[];
 }
 
-export interface Trip<T extends BaseLeg> {
+export interface Trip<T extends BaseLeg = BaseLeg> {
     locations: Location[];
     legs: T[];
     /*
