@@ -28,7 +28,7 @@
   },
   "private": false,
   "scripts": {
-    "postinstall": "yarn husky install",
+    "postinstall": "yarn husky init",
     "prepublishOnly": "pinst --disable && yarn run build",
     "postpublish": "pinst --enable",
     "build": "tsc",
@@ -40,7 +40,8 @@
     "u": "yarn upgrade-interactive --latest",
     "up": "docker-compose up",
     "down": "docker-compose down",
-    "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'"
+    "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'",
+    "prepare": "husky"
   },
   "dependencies": {
     "@iwpnd/rip-ts": "1.0.2",
