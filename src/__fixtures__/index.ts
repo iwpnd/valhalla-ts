@@ -1,9 +1,9 @@
 import Chance from 'chance';
 import type * as GeoJSON from 'geojson';
 import {
-    BaseLeg,
     Isochrone,
     IsochroneResponseProperties,
+    Leg,
     Location,
     StatusResponse,
     Summary,
@@ -175,7 +175,7 @@ export const randomSummary = (data?: Partial<Summary>): Summary => ({
  *
  * @return {@link Trip}
  */
-export const randomTrip = (data?: Partial<Trip<BaseLeg>>): Trip<BaseLeg> => ({
+export const randomTrip = (data?: Partial<Trip<Leg>>): Trip<Leg> => ({
     locations: [randomLocation(), randomLocation()],
     legs: [
         {
