@@ -1,10 +1,13 @@
 import Chance from 'chance';
+
 import type * as GeoJSON from 'geojson';
 import {
     Isochrone,
     IsochroneResponseProperties,
     Leg,
-    Location,
+    Position,
+    RequestLocation,
+    ResponseLocation,
     StatusResponse,
     Summary,
     Trip,
@@ -15,7 +18,7 @@ const chance = new Chance();
 /**
  *
  * Create a status
- * @params data? { Partial<Location>}
+ * @params data? { Partial<StatusResponse>}
  *
  * returns {@link StatusResponse}
  */
@@ -41,19 +44,38 @@ export const randomStatus = <T extends StatusResponse = StatusResponse>(
 
 /**
  *
+ * Create a random position of latitude and longitude
+ *
+ * @remarks
+ * Position is created between
+ * in a bounding box of[-180,-90,180,90]
+ *
+ * @params lat? - latitude
+ * @params lon? - longitude
+ *
+ * returns {@link Position}
+ */
+export const randomPosition = (lat?: number, lon?: number): Position => ({
+    lat: lat || chance.floating({ min: -90, max: 90 }),
+    lon: lon || chance.floating({ min: -180, max: 180 }),
+});
+
+/**
+ *
  * Create a random location
  *
  * @remarks
  * Location is created between
  * in a bounding box of[-180,-90,180,90]
  *
- * @params data? { Partial<Location>}
+ * @params data? { Partial<RequestLocation>}
  *
- * returns {@link Location}
+ * returns {@link RequestPosition}
  */
-export const randomLocation = (data?: Partial<Location>): Location => ({
-    lat: chance.floating({ min: -90, max: 90 }),
-    lon: chance.floating({ min: -180, max: 180 }),
+export const randomRequestLocation = (
+    data?: Partial<RequestLocation>
+): RequestLocation => ({
+    ...randomPosition(),
     ...data,
 });
 
@@ -176,7 +198,10 @@ export const randomSummary = (data?: Partial<Summary>): Summary => ({
  * @return {@link Trip}
  */
 export const randomTrip = (data?: Partial<Trip<Leg>>): Trip<Leg> => ({
-    locations: [randomLocation(), randomLocation()],
+    locations: [
+        { ...randomPosition(), original_index: 0 },
+        { ...randomPosition(), original_index: 1 },
+    ] as ResponseLocation[],
     legs: [
         {
             shape: 'adi`cBk|inXhXjL`QnHpMfFjm@hV',

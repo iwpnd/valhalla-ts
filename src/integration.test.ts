@@ -2,7 +2,6 @@ import {
     CostingModels,
     Leg,
     LegWithManeuvers,
-    Location,
     Trip,
     TurnByTurnRouteRequest,
 } from './types';
@@ -13,15 +12,12 @@ describe('integration', () => {
 
     describe('route', () => {
         it('should request a route with maneuvers for %s', async () => {
-            const locations: Location[] = [
-                { lat: 42.530607, lon: 1.570593 },
-                { lat: 42.534826, lon: 1.579133 },
-            ];
+            const start = { lat: 42.530607, lon: 1.570593 };
+            const end = { lat: 42.534826, lon: 1.579133 };
             const costing = 'bicycle';
-            const [start, end] = locations;
 
             const request: TurnByTurnRouteRequest = {
-                locations,
+                locations: [start, end],
                 costing,
                 directions_type: 'maneuvers',
                 directions_options: {
@@ -32,10 +28,6 @@ describe('integration', () => {
             const response = await valhalla.route<LegWithManeuvers>(request);
 
             expect(response).toEqual({
-                locations: [
-                    { ...start, type: 'break', original_index: 0 },
-                    { ...end, type: 'break', original_index: 1 },
-                ],
                 status_message: 'Found route between points',
                 status: 0,
                 units: 'kilometers',
@@ -89,6 +81,10 @@ describe('integration', () => {
                     length: expect.any(Number) as Number,
                     cost: expect.any(Number) as Number,
                 },
+                locations: [
+                    { ...start, type: 'break', original_index: 0 },
+                    { ...end, type: 'break', original_index: 1 },
+                ],
             } as Trip<LegWithManeuvers>);
         });
 
@@ -99,14 +95,11 @@ describe('integration', () => {
             'truck',
             'bus',
         ] as CostingModels[])('should request a route for %s', async () => {
-            const locations: Location[] = [
-                { lat: 42.530607, lon: 1.570593 },
-                { lat: 42.534826, lon: 1.579133 },
-            ];
-            const [start, end] = locations;
+            const start = { lat: 42.530607, lon: 1.570593 };
+            const end = { lat: 42.534826, lon: 1.579133 };
 
             const request: TurnByTurnRouteRequest = {
-                locations,
+                locations: [start, end],
                 costing: 'bicycle',
                 directions_type: 'none',
                 directions_options: {
