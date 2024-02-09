@@ -1,6 +1,6 @@
 import {
-    BaseLeg,
     CostingModels,
+    Leg,
     LegWithManeuvers,
     Location,
     Trip,
@@ -157,7 +157,7 @@ describe('integration', () => {
                     length: expect.any(Number) as Number,
                     cost: expect.any(Number) as Number,
                 },
-            } as Trip<BaseLeg>);
+            } as Trip<Leg>);
         });
     });
 });

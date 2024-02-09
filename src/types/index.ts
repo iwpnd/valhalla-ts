@@ -1408,17 +1408,16 @@ export interface ManeuverWithInstructionsForTransit
     transit?: TransitInfo;
 }
 
-export interface BaseLeg {
+export interface Leg {
     summary: Summary;
     shape: string;
 }
 
-export interface LegWithManeuvers<T extends Maneuver = Maneuver>
-    extends BaseLeg {
+export interface LegWithManeuvers<T extends Maneuver = Maneuver> extends Leg {
     maneuvers: T[];
 }
 
-export interface Trip<T extends BaseLeg = BaseLeg> {
+export interface Trip<T extends Leg = Leg> {
     locations: Location[];
     legs: T[];
     /*
@@ -1433,7 +1432,7 @@ export interface Trip<T extends BaseLeg = BaseLeg> {
     warnings?: object;
 }
 
-export interface TripResponse<T extends BaseLeg = BaseLeg> {
+export interface TripResponse<T extends Leg = Leg> {
     trip: Trip<T>;
 }
 
@@ -1463,7 +1462,7 @@ export type IsochroneResponse = GeoJSON.FeatureCollection<
     IsochroneResponseProperties
 >;
 
-export type MapMatchingTraceRouteResponse<T extends BaseLeg> = TripResponse<T>;
+export type MapMatchingTraceRouteResponse<T extends Leg> = TripResponse<T>;
 
 export interface MatchedPoints {
     lat: number;
