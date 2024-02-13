@@ -1,6 +1,5 @@
 import {
     CostingModels,
-    Leg,
     LegWithManeuvers,
     Trip,
     TurnByTurnRouteRequest,
@@ -152,7 +151,7 @@ describe('integration', () => {
                         length: expect.any(Number) as Number,
                         cost: expect.any(Number) as Number,
                     },
-                } as Trip<Leg>);
+                } as Trip);
             }
         );
     });
@@ -357,7 +356,7 @@ describe('integration', () => {
                         length: expect.any(Number) as Number,
                         cost: expect.any(Number) as Number,
                     },
-                } as Trip<Leg>);
+                } as Trip);
             }
         );
     });
