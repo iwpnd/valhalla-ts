@@ -179,7 +179,7 @@ export interface BaseMotorizedVehicleCostingOptions {
 }
 
 /*
- * MotorizedPassengerVehicleOptions are available for auto, bus, taxi, and truck costing
+ * MotorizedVehicleCostingOptions are available for auto, bus, taxi
  */
 export interface MotorizedVehicleCostingOptions
     extends BaseMotorizedVehicleCostingOptions {

@@ -6,7 +6,16 @@ import {
     StringBool,
     UnitsOfDistance,
 } from './base';
-import { CostingModels, CostingOptions } from './costing';
+import {
+    BicycleCostingOptions,
+    CostingModels,
+    CostingOptions,
+    MotorScooterCostingOptions,
+    MotorcycleCostingOptions,
+    MotorizedVehicleCostingOptions,
+    PedestrianCostingOptions,
+    TruckCostingOptions,
+} from './costing';
 import { SupportedLanguageAlias, SupportedLanguageTags } from './languages';
 import { LatLng, RequestLocation } from './locations';
 import { TraceAttributesFilter, TraceOptions } from './tracing';
@@ -79,13 +88,70 @@ export interface BaseRouteRequest {
     prioritize_bidirectional?: StringBool;
 }
 
-export interface TurnByTurnRouteRequest extends BaseRouteRequest {
-    costing: CostingModels;
+export interface BicycleRouteRequest extends BaseRouteRequest {
+    costing: 'bicycle';
+    costing_options?: { bicycle: BicycleCostingOptions };
 }
 
-export interface OptimizedRouteRequest extends BaseRouteRequest {
-    costing: Extract<CostingModels, 'auto' | 'bicycle' | 'pedestrian'>;
+export interface PedestrianRouteRequest extends BaseRouteRequest {
+    costing: 'pedestrian';
+    costing_options?: { pedestrian: PedestrianCostingOptions };
 }
+
+export interface AutoRouteRequest extends BaseRouteRequest {
+    costing: 'auto';
+    costing_options?: { auto: MotorizedVehicleCostingOptions };
+}
+
+export interface BusRouteRequest extends BaseRouteRequest {
+    costing: 'bus';
+    costing_options?: { bus: MotorizedVehicleCostingOptions };
+}
+
+export interface TaxiRouteRequest extends BaseRouteRequest {
+    costing: 'taxi';
+    costing_options?: { taxi: MotorizedVehicleCostingOptions };
+}
+
+export interface TruckRouteRequest extends BaseRouteRequest {
+    costing: 'truck';
+    costing_options?: { truck: TruckCostingOptions };
+}
+
+export interface MotorCycleRouteRequest extends BaseRouteRequest {
+    costing: 'motorcycle';
+    costing_options?: { motorcycle: MotorcycleCostingOptions };
+}
+
+export interface MotorScooterRouteRequest extends BaseRouteRequest {
+    costing: 'motor_scooter';
+    costing_options?: { motor_scooter: MotorScooterCostingOptions };
+}
+
+export interface MultiModalRouteRequest extends BaseRouteRequest {
+    costing: 'multimodal';
+}
+
+export interface BikeShareRouteRequest extends BaseRouteRequest {
+    costing: 'bikeshare';
+}
+
+export type TurnByTurnRouteRequest =
+    | BicycleRouteRequest
+    | PedestrianRouteRequest
+    | AutoRouteRequest
+    | BusRouteRequest
+    | TaxiRouteRequest
+    | TruckRouteRequest
+    | MotorCycleRouteRequest
+    | MotorScooterRouteRequest
+    | BikeShareRouteRequest
+    | MultiModalRouteRequest;
+
+export type OptimizedRouteRequest =
+    | AutoRouteRequest
+    | BicycleRouteRequest
+    | PedestrianRouteRequest;
 
 export interface IsochroneBaseContour {
     color?: string;
@@ -99,11 +165,12 @@ export interface IsochroneDistanceContour extends IsochroneBaseContour {
     distance?: number;
 }
 
-export interface IsochroneBaseRequest extends BaseRouteRequest {
-    costing: Extract<
-        CostingModels,
-        'auto' | 'bicycle' | 'pedestrian' | 'multimodal'
-    >;
+export type IsochroneBaseRequest = (
+    | AutoRouteRequest
+    | BicycleRouteRequest
+    | PedestrianRouteRequest
+    | MultiModalRouteRequest
+) & {
     date_time?: DateTime;
     id?: string;
     /*
@@ -129,7 +196,7 @@ export interface IsochroneBaseRequest extends BaseRouteRequest {
      * The Default value is false
      */
     show_locations?: boolean;
-}
+};
 
 export type IsochroneTimeRequest = IsochroneBaseRequest & {
     contours: IsochroneTimeContour[];
