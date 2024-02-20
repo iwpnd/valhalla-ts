@@ -39,6 +39,11 @@ import { Valhalla } from '@iwpnd/valhalla-ts';
 
 const valhalla = new Valhalla('https://localhost:8002');
 
+/*
+ * Request a route for a specific modality
+ * traversing each of the provided `locations`
+ * in order.
+ */
 const route = await valhalla.route({
     locations: [
         { lat: 42.505497, lon: 1.528883 },
@@ -46,13 +51,55 @@ const route = await valhalla.route({
     ],
     costing: 'bicycle',
 });
+
+/*
+ * Request a route for a specific modality
+ * traversing each of the provided `locations`
+ * in an optimized order.
+ */
+const optimizedRoute = await valhalla.optimizedRoute({
+    locations: [
+        { lat: 42.505497, lon: 1.528883 },
+        { lat: 42.505497, lon: 1.528884 },
+        { lat: 42.51276, lon: 1.53527 },
+    ],
+    costing: 'auto',
+});
+
+/*
+ * Request to match a set of input coordinates to
+ * a corresponding node on the road network.
+ */
+const traceRoute = await valhalla.traceRoute({
+    shape: [
+        { lat: 42.505497, lon: 1.528883 },
+        { lat: 42.51276, lon: 1.53527 },
+    ],
+    shape_match: 'map_snap',
+    costing: 'taxi',
+});
+
+/*
+ * Request to generate isochrones around a
+ * request location.
+ */
+const isochrone = await valhalla.isochrone({
+    locations: [{ lat: 42.505497, lon: 1.528883 }],
+    costing: 'bicycle',
+    contours: [
+        { time: 5, color: '2596be' },
+        { time: 10, color: 'be2596' },
+        { time: 15, color: '96be25' },
+    ],
+    polygons: true,
+});
 ```
 
 ## Roadmap
 
 -   [x] valhalla client
 -   [x] fully typed
--   [ ] finish documentation
+-   [x] add usage section to docs
 -   [ ] request helper
 -   [ ] load balancing
 
