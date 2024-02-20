@@ -31,7 +31,7 @@ Either use your own valhalla instances url, pull
 an image of valhalla that includes Andorra routing tiles.
 
 ```bash
-docker run --rm ghcr.io/iwpnd/valhalla-andorra:latest
+docker run --rm -p 8002:8002 ghcr.io/iwpnd/valhalla-andorra:latest
 ```
 
 ```typescript
