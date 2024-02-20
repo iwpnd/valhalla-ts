@@ -27,6 +27,13 @@ npm install @iwpnd/valhalla-ts
 
 ## Usage
 
+Either use your own valhalla instances url, pull
+an image of valhalla that includes Andorra routing tiles.
+
+```bash
+docker run --rm ghcr.io/iwpnd/valhalla-andorra:latest
+```
+
 ```typescript
 import { Valhalla } from '@iwpnd/valhalla-ts';
 
@@ -34,8 +41,8 @@ const valhalla = new Valhalla('https://localhost:8002');
 
 const route = await valhalla.route({
     locations: [
-        { lat: 52.25, lon: 13.37 },
-        { lat: 52.25, lon: 13.36 },
+        { lat: 42.505497, lon: 1.528883 },
+        { lat: 42.51276, lon: 1.53527 },
     ],
     costing: 'bicycle',
 });
