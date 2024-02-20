@@ -111,7 +111,7 @@ export class Valhalla extends RestClient {
      *
      * @returns {@link MapMatchingTraceRouteResponse}
      */
-    async mapmatching<T extends Leg>(
+    async traceRoute<T extends Leg>(
         query: MapMatchingShapeRequest | MapMatchingPolylineRequest
     ): Promise<MapMatchingTraceRouteResponse<T>> {
         const options = {

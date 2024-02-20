@@ -232,7 +232,7 @@ describe('valhalla', () => {
         });
     });
 
-    describe('mapmatching', () => {
+    describe('traceRoute', () => {
         const trip = randomTrip();
         const {
             locations: [start, end],
@@ -264,7 +264,7 @@ describe('valhalla', () => {
                 })
                 .reply(200, { trip });
 
-            await expect(valhalla.mapmatching(req)).resolves.toEqual({ trip });
+            await expect(valhalla.traceRoute(req)).resolves.toEqual({ trip });
         });
 
         it('should throw on error', async () => {
@@ -283,7 +283,7 @@ describe('valhalla', () => {
                 })
                 .reply(404, {});
 
-            await expect(valhalla.mapmatching(req)).rejects.toThrow(
+            await expect(valhalla.traceRoute(req)).rejects.toThrow(
                 RequestError
             );
         });
