@@ -1,3 +1,19 @@
+## [1.0.1](https://github.com/iwpnd/valhalla-ts/compare/v1.0.0...v1.0.1) (2024-02-20)
+
+
+### Other
+
+* ♻️ rename method mapmatching to traceRoute to stay closer to valhalla ([d06206e](https://github.com/iwpnd/valhalla-ts/commit/d06206ecbdb30d2b321612bf51b1f0bc697658e4))
+* **deps-dev:** 🔧 update ([c638d1c](https://github.com/iwpnd/valhalla-ts/commit/c638d1c7da8ae6790061d0dec87edce324e316d3))
+* **deps-dev:** 🔧 update ([0cf90c8](https://github.com/iwpnd/valhalla-ts/commit/0cf90c8202f2924c0ea2cb902fbe630bfe15e5b4))
+
+
+### Documentation
+
+* 📚️ update readme ([54563fe](https://github.com/iwpnd/valhalla-ts/commit/54563fe82be48275ecd872152a8a8c1538a7fc1c))
+* 📚️ update readme [skip ci] ([b9688ef](https://github.com/iwpnd/valhalla-ts/commit/b9688ef38db5705b39860d6bdcc82c5b66ce53a0))
+* update readme, fix port [skip ci] ([59ef077](https://github.com/iwpnd/valhalla-ts/commit/59ef077e4137f598a6dac4c8bbfef8ce16b624c2))
+
 ## 1.0.0 (2024-02-13)
 
 
