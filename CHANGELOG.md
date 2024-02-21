@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/iwpnd/valhalla-ts/compare/v1.0.2...v1.0.3) (2024-02-21)
+
+
+### Documentation
+
+* 📚️ fix docstrings ([32e7655](https://github.com/iwpnd/valhalla-ts/commit/32e76556913e412ad12304a7842d45676ece711f))
+
 ## [1.0.2](https://github.com/iwpnd/valhalla-ts/compare/v1.0.1...v1.0.2) (2024-02-21)
 
 
