@@ -3,17 +3,18 @@ import { StringBool } from './base';
 /**
  * Costing Models used in routing
  */
-export type CostingModels =
-    | 'pedestrian'
-    | 'bicycle'
-    | 'auto'
-    | 'bus'
-    | 'bikeshare'
-    | 'truck'
-    | 'taxi'
-    | 'motor_scooter'
-    | 'motorcycle'
-    | 'multimodal';
+export enum CostingModels {
+    PEDESTRIAN = 'pedestrian',
+    BICYCLE = 'bicycle',
+    AUTO = 'auto',
+    BUS = 'bus',
+    TRUCK = 'truck',
+    TAXI = 'taxi',
+    MOTORSCOOTER = 'motor_scooter',
+    MOTORCYCLE = 'motorcycle',
+    BIKESHARE = 'bikeshare',
+    MULTIMODAL = 'multimodal',
+}
 
 /**
  * Automobile costing options that can be used during routing.

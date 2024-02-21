@@ -26,7 +26,7 @@ export interface DirectionsOptions {
 }
 
 export interface MapMatchingBaseRequest {
-    costing: Extract<CostingModels, 'auto' | 'bicycle' | 'bus' | 'pedestrian'>;
+    costing: `${Extract<CostingModels, 'auto' | 'bicycle' | 'bus' | 'pedestrian'>}`;
     shape_match: ShapeMatchType;
     costing_options?: CostingOptions;
     directions_options?: DirectionsOptions;
@@ -89,51 +89,51 @@ export interface BaseRouteRequest {
 }
 
 export interface BicycleRouteRequest extends BaseRouteRequest {
-    costing: 'bicycle';
+    costing: `${CostingModels.BICYCLE}`;
     costing_options?: { bicycle: BicycleCostingOptions };
 }
 
 export interface PedestrianRouteRequest extends BaseRouteRequest {
-    costing: 'pedestrian';
+    costing: `${CostingModels.PEDESTRIAN}`;
     costing_options?: { pedestrian: PedestrianCostingOptions };
 }
 
 export interface AutoRouteRequest extends BaseRouteRequest {
-    costing: 'auto';
+    costing: `${CostingModels.AUTO}`;
     costing_options?: { auto: MotorizedVehicleCostingOptions };
 }
 
 export interface BusRouteRequest extends BaseRouteRequest {
-    costing: 'bus';
+    costing: `${CostingModels.BUS}`;
     costing_options?: { bus: MotorizedVehicleCostingOptions };
 }
 
 export interface TaxiRouteRequest extends BaseRouteRequest {
-    costing: 'taxi';
+    costing: `${CostingModels.TAXI}`;
     costing_options?: { taxi: MotorizedVehicleCostingOptions };
 }
 
 export interface TruckRouteRequest extends BaseRouteRequest {
-    costing: 'truck';
+    costing: `${CostingModels.TRUCK}`;
     costing_options?: { truck: TruckCostingOptions };
 }
 
 export interface MotorCycleRouteRequest extends BaseRouteRequest {
-    costing: 'motorcycle';
+    costing: `${CostingModels.MOTORCYCLE}`;
     costing_options?: { motorcycle: MotorcycleCostingOptions };
 }
 
 export interface MotorScooterRouteRequest extends BaseRouteRequest {
-    costing: 'motor_scooter';
+    costing: `${CostingModels.MOTORSCOOTER}`;
     costing_options?: { motor_scooter: MotorScooterCostingOptions };
 }
 
 export interface MultiModalRouteRequest extends BaseRouteRequest {
-    costing: 'multimodal';
+    costing: `${CostingModels.MULTIMODAL}`;
 }
 
 export interface BikeShareRouteRequest extends BaseRouteRequest {
-    costing: 'bikeshare';
+    costing: `${CostingModels.BIKESHARE}`;
 }
 
 export type TurnByTurnRouteRequest =
