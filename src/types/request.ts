@@ -50,35 +50,35 @@ export interface BaseRouteRequest {
     locations: RequestLocation[];
     costing_options?: CostingOptions;
     directions_options?: DirectionsOptions;
-    /*
+    /**
      * none | maneuvers | instructions
      */
     directions_type?: DirectionsType;
-    /*
+    /**
      * ID that is returned in route response for reference
      */
     id?: string;
-    /*
+    /**
      * Exclude edges that are close to a set of Positions from the final route
      */
     exclude_locations?: RequestLocation[];
-    /*
+    /**
      * Exclude edges that intersect a set of polygons from the final route
      */
     exclude_polygons?: OuterPolygonRing[];
-    /*
+    /**
      * Use to define departure and arrival time
      */
     date_time?: DateTime;
-    /*
+    /**
      * Output format, defaults to json
      */
     out_format?: 'json' | 'pbf';
-    /*
+    /**
      * When present and true, the successful route response will include a key linear_references
      */
     linear_references?: StringBool;
-    /*
+    /**
      * Prioritize bidirectional a* when date_time.type = depart_at/current.
      * By default time_dependent_forward a* is used in these cases,
      * but bidirectional a* is much faster. Currently it does not update
@@ -173,24 +173,24 @@ export type IsochroneBaseRequest = (
 ) & {
     date_time?: DateTime;
     id?: string;
-    /*
+    /**
      * A Boolean value to determine whether to return geojson polygons or linestrings as the contours.
      *
      * The Default value is false (returns LineStrings)
      */
     polygons?: boolean;
-    /*
+    /**
      * A floating point value from 0 to 1 (default of 1) which can be used to remove smaller contours.
      * A value of 1 will only return the largest contour for a given time value.
      * A value of 0.5 drops any contours that are less than half the area of
      * the largest contour in the set of contours for that same time value.
      */
     denoise?: number;
-    /*
+    /**
      * Floating point value in meters as the tolerance in douglas-peucker generalization
      */
     generalize?: number;
-    /*
+    /**
      * True, returns input location as MultiPoint, one for the search location, one for the snap to the edge
      *
      * The Default value is false

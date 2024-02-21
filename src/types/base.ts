@@ -1,6 +1,6 @@
 export type StringBool = 'true' | 'false';
 
-/*
+/**
  * 0 - current departure time
  * 1 - specified departure time
  * 2 - specified arrival time

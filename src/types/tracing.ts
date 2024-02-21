@@ -86,19 +86,19 @@ export interface TraceAttributesFilter {
 
 export interface TraceOptions {
     turn_penalty_factor?: number;
-    /*
+    /**
      * Search radius in meters associated with supplied trace points.
      */
     search_radius?: number[];
-    /*
+    /**
      * GPS accuracy in meters associated with supplied trace points.
      */
     gps_accuracy?: number[];
-    /*
+    /**
      * Breaking distance in meters between trace points.
      */
     breakage_distance?: number;
-    /*
+    /**
      * Interpolation distance in meters beyond which trace points are merged together.
      */
     interpolation_distance?: number;

@@ -1,5 +1,5 @@
 export interface ErrorResponse {
-    /*
+    /**
      * for detailed run-down see
      * [here](https://valhalla.github.io/valhalla/api/turn-by-turn/api-reference/#http-status-codes-and-conditions)
      */

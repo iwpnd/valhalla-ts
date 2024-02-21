@@ -30,7 +30,7 @@ export interface LegWithManeuvers<T extends Maneuver = Maneuver> extends Leg {
 export interface Trip<T extends Leg = Leg> {
     locations: ResponseLocation[];
     legs: T[];
-    /*
+    /**
      * for detailed run-down see
      * [here](https://valhalla.github.io/valhalla/api/turn-by-turn/api-reference/#http-status-codes-and-conditions)
      */
@@ -79,25 +79,25 @@ export interface MatchedPoints {
     lon: number;
     type: 'matched' | 'interpolated' | 'unmatched';
     edge_index: number;
-    /*
+    /**
      * The boolean value is true if this match result is the begin location of a route disconnect.
      *
      * This value will not exist if this is false.
      */
     begin_route_discontinuity?: boolean;
-    /*
+    /**
      * The boolean value is true if this match result is the end location of a route disconnect.
      * This value will not exist if this is false.
      */
     end_route_discontinuity?: boolean;
-    /*
+    /**
      * The distance along the associated edge for this matched point.
      * For example, if the matched point is halfway along the edge then the value would be 0.5.
      *
      * This value will not exist if this point was unmatched.
      */
     distance_along_edge: number;
-    /*
+    /**
      * The distance in meters from the trace point to the matched point.
      *
      * This value will not exist if this point was unmatched.
@@ -108,7 +108,7 @@ export interface MatchedPoints {
 export interface MapMatchingTraceAttributesResponse {
     units: UnitsOfDistance;
     osm_changeset: number;
-    /*
+    /**
      * Encoded polyline
      */
     shape: string;
@@ -124,7 +124,7 @@ export interface MapMatchingTraceAttributesResponse {
     matched_points: MatchedPoints[];
 }
 
-/*
+/**
  * Status Service API
  *
  * In its base form will return version and tileset_last_modified
@@ -137,7 +137,7 @@ export interface StatusResponse {
     tileset_last_modfied: number;
 }
 
-/*
+/**
  * Status Service API
  *
  * In its base form will return version and tileset_last_modified
