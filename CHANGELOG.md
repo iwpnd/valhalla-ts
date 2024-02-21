@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/iwpnd/valhalla-ts/compare/v1.0.1...v1.0.2) (2024-02-21)
+
+
+### Bug Fixes
+
+* 🐛 costing models as enum, request use string literal of costing models ([a52ef25](https://github.com/iwpnd/valhalla-ts/commit/a52ef25472a111156ebfd9843fca20de08cf0195))
+
 ## [1.0.1](https://github.com/iwpnd/valhalla-ts/compare/v1.0.0...v1.0.1) (2024-02-20)
 
 
