@@ -12,6 +12,7 @@ module.exports = {
                 releaseRules: [
                     { type: 'docs', release: 'patch' },
                     { type: 'perf', release: 'patch' },
+                    { type: 'chore', scope: 'deps', release: 'patch' },
                 ],
             },
         ],
