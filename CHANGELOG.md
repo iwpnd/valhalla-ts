@@ -1,3 +1,16 @@
+## [1.0.4](https://github.com/iwpnd/valhalla-ts/compare/v1.0.3...v1.0.4) (2024-03-10)
+
+
+### Other
+
+* 📦️ update typescript ([186b849](https://github.com/iwpnd/valhalla-ts/commit/186b849dc47ae477b7ced5fbf9b3ecd0b76fd1d0))
+* 🔧 release on dep update ([5ddc47c](https://github.com/iwpnd/valhalla-ts/commit/5ddc47c0943b0d0f894b3a37f5b84bb950205dbe))
+* **deps-dev:** 🔧 .editorconfig ([06f1d46](https://github.com/iwpnd/valhalla-ts/commit/06f1d46818df419691de4f8766939c53331714f1))
+* **deps-dev:** 🔧 update ([191250f](https://github.com/iwpnd/valhalla-ts/commit/191250f70ec7052eb80f46ea80e3a6628c3bc277))
+* **deps-dev:** 🔧 update ([c6fc8b4](https://github.com/iwpnd/valhalla-ts/commit/c6fc8b4a181471d879e9669bb877088fa926f99a))
+* **deps-dev:** 🔧 update commitlint & lockfile maintenance ([c3527db](https://github.com/iwpnd/valhalla-ts/commit/c3527dbc429e388dd23b7af61d35f49994e49736))
+* **deps:** 🔗 update rip ([e61d21f](https://github.com/iwpnd/valhalla-ts/commit/e61d21f7f48b9ea6a51e6e38a7f69b21c782f6ca))
+
 ## [1.0.3](https://github.com/iwpnd/valhalla-ts/compare/v1.0.2...v1.0.3) (2024-02-21)
 
 
