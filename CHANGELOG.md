@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/iwpnd/valhalla-ts/compare/v1.0.4...v1.0.5) (2024-03-20)
+
+
+### Other
+
+* 👷 dependabot add github-actions ([b1eac0e](https://github.com/iwpnd/valhalla-ts/commit/b1eac0e226a4f27bb4dab311ce75adcf5406308d))
+* **deps-dev:** 🔧 update ([9e77606](https://github.com/iwpnd/valhalla-ts/commit/9e77606f7d0793ff079bba1387e58d2d5d17d8f6))
+* **deps:** 🔗 update rip ([b28bb1e](https://github.com/iwpnd/valhalla-ts/commit/b28bb1ed6d927add43093e0f3689cf7671b52ec0))
+
 ## [1.0.4](https://github.com/iwpnd/valhalla-ts/compare/v1.0.3...v1.0.4) (2024-03-10)
 
 
