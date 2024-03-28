@@ -43,7 +43,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@iwpnd/rip-ts": "1.0.5",
+    "@iwpnd/rip-ts": "1.0.6",
     "@types/geojson": "7946.0.14"
   },
   "devDependencies": {
