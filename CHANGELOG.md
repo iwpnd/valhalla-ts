@@ -1,3 +1,15 @@
+## [1.0.8](https://github.com/iwpnd/valhalla-ts/compare/v1.0.7...v1.0.8) (2024-05-05)
+
+
+### Other
+
+* **deps-dev:** 🔧 update ([f70034a](https://github.com/iwpnd/valhalla-ts/commit/f70034a644c0c8053ab15e4ff763f8174bd24ba3))
+* **deps-dev:** 🔧 update ([dbb4d12](https://github.com/iwpnd/valhalla-ts/commit/dbb4d12b4cf10ebcb13a433c28dd30b82e4041c2))
+* **deps-dev:** bump semantic-release in the semantic-release group ([e45094b](https://github.com/iwpnd/valhalla-ts/commit/e45094baa9bc0e00d5d9b093397eb58591d76be0))
+* **deps:** 🔗 update iwpnd/rip to 1.0.9 ([639749e](https://github.com/iwpnd/valhalla-ts/commit/639749e439e7feae94fc1aee29aaed62b488b1d5))
+* **deps:** 🔗 update iwpnd/rip-ts to v1.1.0 ([c206ff4](https://github.com/iwpnd/valhalla-ts/commit/c206ff4e742356712c31ef06e487dd0aee7a1852))
+* **deps:** 🔗 update rip-ts to 1.0.8 ([8a0a98a](https://github.com/iwpnd/valhalla-ts/commit/8a0a98ab331b65fa0972d4bf16fc1b7ce2f842ff))
+
 ## [1.0.7](https://github.com/iwpnd/valhalla-ts/compare/v1.0.6...v1.0.7) (2024-04-08)
 
 
