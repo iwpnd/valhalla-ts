@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/iwpnd/valhalla-ts/compare/v1.0.8...v1.0.9) (2024-05-09)
+
+
+### Other
+
+* **deps:** 🔗 update rip-ts to v1.1.1 ([33c03c9](https://github.com/iwpnd/valhalla-ts/commit/33c03c9ac4a4586421233efe1c54ea15b11158b7))
+
 ## [1.0.8](https://github.com/iwpnd/valhalla-ts/compare/v1.0.7...v1.0.8) (2024-05-05)
 
 
