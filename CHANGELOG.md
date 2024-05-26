@@ -1,3 +1,13 @@
+## [1.0.11](https://github.com/iwpnd/valhalla-ts/compare/v1.0.10...v1.0.11) (2024-05-26)
+
+
+### Other
+
+* **deps-dev:** 🔧 update ([dc192fb](https://github.com/iwpnd/valhalla-ts/commit/dc192fbd67f487964f1e25a6be813da4fbc33cc0))
+* **deps-dev:** 🔧 update ([9a97c93](https://github.com/iwpnd/valhalla-ts/commit/9a97c938fce7f0103a4e378f60905d97261d51b0))
+* **deps-dev:** bump rimraf from 5.0.5 to 5.0.6 ([8a50855](https://github.com/iwpnd/valhalla-ts/commit/8a508551fa3c0b0ef785705f5b6bf7a0abe54197))
+* **deps:** 🔗 update rip-ts v1.1.3 ([2a4cb39](https://github.com/iwpnd/valhalla-ts/commit/2a4cb3907d04e31c404b62c0f6b176187f51e247))
+
 ## [1.0.10](https://github.com/iwpnd/valhalla-ts/compare/v1.0.9...v1.0.10) (2024-05-12)
 
 
