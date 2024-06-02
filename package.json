@@ -1,6 +1,6 @@
 {
   "name": "@iwpnd/valhalla-ts",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A nodejs client and helper utilities for valhalla routing engine",
   "main": "dist/index.js",
   "files": [
