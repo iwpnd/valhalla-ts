@@ -1,3 +1,12 @@
+## [1.0.13](https://github.com/iwpnd/valhalla-ts/compare/v1.0.12...v1.0.13) (2024-06-23)
+
+### Other
+
+* **deps-dev:** 🔧 update ([3e0a7d5](https://github.com/iwpnd/valhalla-ts/commit/3e0a7d5231eea6f9f4b656c9e66157b398e3167d))
+* **deps-dev:** 🔧 update ([713e8e3](https://github.com/iwpnd/valhalla-ts/commit/713e8e3670bc7bcea4eb95d904e4f37c71caf484))
+* **deps-dev:** bump lint-staged from 15.2.5 to 15.2.7 ([4eb681e](https://github.com/iwpnd/valhalla-ts/commit/4eb681eb1d909577da6b6d207b4c9945e68b6e50))
+* **deps:** 🔗 update rip-ts ([a632284](https://github.com/iwpnd/valhalla-ts/commit/a632284df71d14b0063a76fb55e395adf9301b07))
+
 ## [1.0.12](https://github.com/iwpnd/valhalla-ts/compare/v1.0.11...v1.0.12) (2024-06-02)
 
 ### Other
