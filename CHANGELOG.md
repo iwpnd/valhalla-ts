@@ -1,3 +1,11 @@
+## [1.0.14](https://github.com/iwpnd/valhalla-ts/compare/v1.0.13...v1.0.14) (2024-08-16)
+
+### Other
+
+* 🔧 fix linter ([166fdd2](https://github.com/iwpnd/valhalla-ts/commit/166fdd2165e9bbb594db8881e7910960c6a06eea))
+* **deps-dev:** 🔧 update ([e9cc9e6](https://github.com/iwpnd/valhalla-ts/commit/e9cc9e637536a1e00125f1ef67f6c0c48b0afc8d))
+* **deps:** 🔗 update rip-ts ([a43f55d](https://github.com/iwpnd/valhalla-ts/commit/a43f55d0474b941540c39c0aade8f6142979d937))
+
 ## [1.0.13](https://github.com/iwpnd/valhalla-ts/compare/v1.0.12...v1.0.13) (2024-06-23)
 
 ### Other
