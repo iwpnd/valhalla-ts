@@ -543,12 +543,12 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@iwpnd/rip-ts@1.1.6":
-  version "1.1.6"
-  resolved "https://registry.npmjs.org/@iwpnd/rip-ts/-/rip-ts-1.1.6.tgz#65deb06795fdcf4e58c2dd991b84f9bcf2d5cb17"
-  integrity sha512-Dz05vObyxgV45qtJSzX7au1C7/9+aZMSX62HMspTtpLGeEvcVOgmu2OZY2kToOWmOzGdIhH6l53H/6bR6ksctA==
+"@iwpnd/rip-ts@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/@iwpnd/rip-ts/-/rip-ts-1.1.7.tgz#04db376fe0e6a93068473ee789c81cab325ab57f"
+  integrity sha512-t9H78YfZwkhAegFlHMXO8LOkzUH4bRJzhLIcOsiBIeNRel+ZuQNEAgsnUhcvD7vXvuAe2+I+bNoghvbpT1CK6w==
   dependencies:
-    undici "6.19.7"
+    undici "6.19.8"
 
 "@jest/console@^29.7.0":
   version "29.7.0"
@@ -6782,10 +6782,10 @@ undici-types@~5.26.4:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
-undici@6.19.7:
-  version "6.19.7"
-  resolved "https://registry.npmjs.org/undici/-/undici-6.19.7.tgz#7d4cf26dc689838aa8b6753a3c5c4288fc1e0216"
-  integrity sha512-HR3W/bMGPSr90i8AAp2C4DM3wChFdJPLrWYpIS++LxS8K+W535qftjt+4MyjNYHeWabMj1nvtmLIi7l++iq91A==
+undici@6.19.8:
+  version "6.19.8"
+  resolved "https://registry.npmjs.org/undici/-/undici-6.19.8.tgz#002d7c8a28f8cc3a44ff33c3d4be4d85e15d40e1"
+  integrity sha512-U8uCCl2x9TK3WANvmBavymRzxbfFYG+tAu+fgx3zxQy3qdagQqBLwJVrdyO1TBfUXvfKveMKJZhpvUYoOjM+4g==
 
 unicode-emoji-modifier-base@^1.0.0:
   version "1.0.0"
