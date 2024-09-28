@@ -26,7 +26,7 @@ export type PreferredSide = 'same' | 'opposite' | 'either';
  */
 export type LocationType = 'break' | 'break_through' | 'through' | 'via';
 
-type LocationSearchFilter = {
+interface LocationSearchFilter {
     /**
      * Exclude tunnel edges
      */
@@ -51,7 +51,7 @@ type LocationSearchFilter = {
      * highest road class allowed to snap to, defaults to 'motorway'
      */
     max_road_class?: RoadClass;
-};
+}
 
 export interface Position {
     /**
