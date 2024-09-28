@@ -17,8 +17,7 @@ import {
 
 export class Valhalla extends RestClient {
     constructor(url?: string, options?: RequestOptions) {
-        /* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */
-        super(url ?? process.env.VALHALLA_URL!, {
+        super(url || (process.env.VALHALLA_URL as string), {
             ...options,
             headers: {
                 Accept: 'application/json',

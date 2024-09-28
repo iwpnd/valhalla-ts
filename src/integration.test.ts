@@ -42,13 +42,13 @@ describe('integration', () => {
                                 length: expect.any(Number) as number,
                                 street_names: expect.any(
                                     Array<string>
-                                ) as string[],
+                                ) as Array<string>,
                                 time: expect.any(Number) as number,
                                 travel_mode: costing,
                                 travel_type: expect.any(String) as string,
                                 type: expect.any(Number) as number,
                             },
-                        ]) as object[],
+                        ]) as Array<object>,
                         summary: {
                             has_time_restrictions: expect.any(
                                 Boolean
@@ -191,13 +191,13 @@ describe('integration', () => {
                                 length: expect.any(Number) as number,
                                 street_names: expect.any(
                                     Array<string>
-                                ) as string[],
+                                ) as Array<string>,
                                 time: expect.any(Number) as number,
                                 travel_mode: costing,
                                 travel_type: expect.any(String) as string,
                                 type: expect.any(Number) as number,
                             },
-                        ]) as object[],
+                        ]) as Array<object>,
                         summary: {
                             has_time_restrictions: expect.any(
                                 Boolean
@@ -225,13 +225,13 @@ describe('integration', () => {
                                 length: expect.any(Number) as number,
                                 street_names: expect.any(
                                     Array<string>
-                                ) as string[],
+                                ) as Array<string>,
                                 time: expect.any(Number) as number,
                                 travel_mode: costing,
                                 travel_type: expect.any(String) as string,
                                 type: expect.any(Number) as number,
                             },
-                        ]) as object[],
+                        ]) as Array<object>,
                         summary: {
                             has_time_restrictions: expect.any(
                                 Boolean

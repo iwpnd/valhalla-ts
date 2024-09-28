@@ -603,10 +603,10 @@ export interface MotorcycleCostingOptions extends MotorScooterCostingOptions {
     use_trial?: number;
 }
 
-export interface TransitCostingFilter {
+export type TransitCostingFilter = {
     ids: string[];
     action: 'exclude' | 'include';
-}
+};
 
 /**
  * TransitCostingOptions
@@ -653,7 +653,7 @@ export interface TransitCostingOptions {
     filters?: TransitCostingFilter[];
 }
 
-export interface CostingOptions {
+export type CostingOptions = {
     auto?: MotorizedVehicleCostingOptions;
     taxi?: MotorizedVehicleCostingOptions;
     bus?: MotorizedVehicleCostingOptions;
@@ -663,4 +663,4 @@ export interface CostingOptions {
     motorcycle?: MotorcycleCostingOptions;
     motor_scooter?: MotorScooterCostingOptions;
     multimodal?: TransitCostingOptions;
-}
+};

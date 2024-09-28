@@ -4,6 +4,7 @@ import type * as GeoJSON from 'geojson';
 import {
     Isochrone,
     IsochroneResponseProperties,
+    Leg,
     Position,
     RequestLocation,
     ResponseLocation,
@@ -21,23 +22,25 @@ const chance = new Chance();
  *
  * returns {@link StatusResponse}
  */
-/* eslint-ignore-next-line @typescript-eslint/no-unnecessary-type-parameters */
-export const randomStatus = (extended = false): StatusResponse => ({
-    version: chance.string(),
-    tileset_last_modfied: chance.timestamp(),
-    ...(extended && {
-        has_admin: chance.bool(),
-        has_tiles: chance.bool(),
-        has_timezones: chance.bool(),
-        has_live_traffic: chance.bool(),
-        bbox: [
-            chance.floating({ min: 0, max: 90 }),
-            chance.floating({ min: 0, max: 45 }),
-            chance.floating({ min: 90, max: 180 }),
-            chance.floating({ min: 45, max: 90 }),
-        ],
-    }),
-});
+export const randomStatus = <T extends StatusResponse = StatusResponse>(
+    extended = false
+): T =>
+    ({
+        version: chance.string(),
+        tileset_last_modfied: chance.timestamp(),
+        ...(extended && {
+            has_admin: chance.bool(),
+            has_tiles: chance.bool(),
+            has_timezones: chance.bool(),
+            has_live_traffic: chance.bool(),
+            bbox: [
+                chance.floating({ min: 0, max: 90 }),
+                chance.floating({ min: 0, max: 45 }),
+                chance.floating({ min: 90, max: 180 }),
+                chance.floating({ min: 45, max: 90 }),
+            ],
+        }),
+    }) as T;
 
 /**
  *
@@ -53,8 +56,8 @@ export const randomStatus = (extended = false): StatusResponse => ({
  * returns {@link Position}
  */
 export const randomPosition = (lat?: number, lon?: number): Position => ({
-    lat: lat ?? chance.floating({ min: -90, max: 90 }),
-    lon: lon ?? chance.floating({ min: -180, max: 180 }),
+    lat: lat || chance.floating({ min: -90, max: 90 }),
+    lon: lon || chance.floating({ min: -180, max: 180 }),
 });
 
 /**
@@ -194,7 +197,7 @@ export const randomSummary = (data?: Partial<Summary>): Summary => ({
  *
  * @return {@link Trip}
  */
-export const randomTrip = (data?: Partial<Trip>): Trip => ({
+export const randomTrip = (data?: Partial<Trip<Leg>>): Trip<Leg> => ({
     locations: [
         { ...randomPosition(), original_index: 0 },
         { ...randomPosition(), original_index: 1 },

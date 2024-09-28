@@ -1,3 +1,6 @@
+/* eslint-disable no-bitwise */
+/* eslint-disable no-plusplus */
+
 import type * as GeoJSON from 'geojson';
 
 /**
