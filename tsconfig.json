@@ -19,5 +19,5 @@
     "target": "es2020"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "src/__fixtures__/*.ts"]
+  "exclude": ["node_modules", "dist"]
 }
