@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-parameters */
+
 import Chance from 'chance';
 
 import type * as GeoJSON from 'geojson';
 import {
     Isochrone,
     IsochroneResponseProperties,
-    Leg,
     Position,
     RequestLocation,
     ResponseLocation,
@@ -56,8 +57,8 @@ export const randomStatus = <T extends StatusResponse = StatusResponse>(
  * returns {@link Position}
  */
 export const randomPosition = (lat?: number, lon?: number): Position => ({
-    lat: lat || chance.floating({ min: -90, max: 90 }),
-    lon: lon || chance.floating({ min: -180, max: 180 }),
+    lat: lat ?? chance.floating({ min: -90, max: 90 }),
+    lon: lon ?? chance.floating({ min: -180, max: 180 }),
 });
 
 /**
@@ -197,7 +198,7 @@ export const randomSummary = (data?: Partial<Summary>): Summary => ({
  *
  * @return {@link Trip}
  */
-export const randomTrip = (data?: Partial<Trip<Leg>>): Trip<Leg> => ({
+export const randomTrip = (data?: Partial<Trip>): Trip => ({
     locations: [
         { ...randomPosition(), original_index: 0 },
         { ...randomPosition(), original_index: 1 },

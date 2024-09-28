@@ -9,11 +9,11 @@ export type StringBool = 'true' | 'false';
 export type DateTimeType = 0 | 1 | 2 | 3;
 export type DateTimeValue = string;
 
-export type DateTime = {
+export interface DateTime {
     type: DateTimeType;
     // YYYY-MM-DDTHH:MM
     value: DateTimeValue;
-};
+}
 
 export type OuterPolygonRing = number[][];
 

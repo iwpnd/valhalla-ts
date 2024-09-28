@@ -17,7 +17,13 @@ import {
 
 export class Valhalla extends RestClient {
     constructor(url?: string, options?: RequestOptions) {
-        super(url || (process.env.VALHALLA_URL as string), {
+        const uri = url ?? process.env.VALHALLA_URL;
+
+        if (!uri) {
+            throw Error('valhalla url is required');
+        }
+
+        super(uri, {
             ...options,
             headers: {
                 Accept: 'application/json',
