@@ -9,7 +9,7 @@
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iwpnd/valhalla-ts.git"
+    "url": "git+https://github.com/iwpnd/valhalla-ts.git"
   },
   "publishConfig": {
     "access": "public"
@@ -30,11 +30,11 @@
   "scripts": {
     "prepublishOnly": "pinst --disable && yarn run build",
     "postpublish": "pinst --enable",
-    "build": "tsc -p tsconfig.build.json",
-    "build:watch": "tsc --watch -p tsconfig.build.json",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
     "clean": "rimraf {dist,tsconfig.tsbuildinfo,yarn-error.log,coverage}",
     "lint": "eslint ./src",
-    "test": "jest --runInBand --verbose --testMatch '**/*test.ts' --coverage",
+    "test": "jest --runInBand --verbose --testMatch '**/*.test.ts' --coverage",
     "format": "prettier --write src/{*.ts,**/*.ts}",
     "u": "yarn upgrade-interactive --latest",
     "up": "docker-compose up",
@@ -43,7 +43,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@iwpnd/rip-ts": "1.1.8",
+    "@iwpnd/rip-ts": "1.1.9",
     "@types/geojson": "7946.0.14"
   },
   "devDependencies": {
