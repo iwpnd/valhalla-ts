@@ -1,3 +1,21 @@
+## [1.0.15](https://github.com/iwpnd/valhalla-ts/compare/v1.0.14...v1.0.15) (2024-10-24)
+
+### Other
+
+* 👷 dependabot ignore patch ([029f5f3](https://github.com/iwpnd/valhalla-ts/commit/029f5f3643031aafff12004b30e2daa1030bc1ac))
+* 🔧 bump nodejs ([6b9786a](https://github.com/iwpnd/valhalla-ts/commit/6b9786a76d3a02b3ba4cb663fefb2b2936d683bf))
+* 🔧 bump rip-ts ([4cbdc05](https://github.com/iwpnd/valhalla-ts/commit/4cbdc05f339c024c84ef1b8179f67245e1e67689))
+* **deps-dev:** 🔧 eslint v9 ([bb30787](https://github.com/iwpnd/valhalla-ts/commit/bb30787726bdfc36b7c09f526353a84a06bb17ae))
+* **deps-dev:** 🔧 fix linting ([280f7f6](https://github.com/iwpnd/valhalla-ts/commit/280f7f67ef9cfa64f8096b6f8b46be9cf05ff4a7))
+* **deps-dev:** 🔧 fix linting ([a1fbd62](https://github.com/iwpnd/valhalla-ts/commit/a1fbd621179e676d02dd803f74abe391ef157919))
+* **deps-dev:** 🔧 husky deprecation warning ([b2dbf78](https://github.com/iwpnd/valhalla-ts/commit/b2dbf784988c88b3c61c50aa51e42a51d4c3aac2))
+* **deps-dev:** 🔧 update ([141b2bf](https://github.com/iwpnd/valhalla-ts/commit/141b2bf6545ae92c0c043d72e5167bef03ca3865))
+* **deps-dev:** 🔧 update ([ecd2a29](https://github.com/iwpnd/valhalla-ts/commit/ecd2a298d9ae6798bc2ad25a60a7c870777abc5d))
+* **deps-dev:** 🔧 update ([21553ef](https://github.com/iwpnd/valhalla-ts/commit/21553ef8022473f9889c5707f700e6a07496b5a6))
+* **deps-dev:** bump @semantic-release/github ([2fdf576](https://github.com/iwpnd/valhalla-ts/commit/2fdf5763a5509073b2cbeed950c0ac58a1165ea8))
+* **deps:** 🔗 bump rip-ts ([f48683a](https://github.com/iwpnd/valhalla-ts/commit/f48683a4ecba3052b5fe4f9c6a45a4a09e2dd75c))
+* **deps:** 🔗 update rip-ts and publish ([28f68e8](https://github.com/iwpnd/valhalla-ts/commit/28f68e865ea9b25e6b44c2c1cdad83aabe5b3403))
+
 ## [1.0.14](https://github.com/iwpnd/valhalla-ts/compare/v1.0.13...v1.0.14) (2024-08-16)
 
 ### Other
