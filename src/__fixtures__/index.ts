@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-parameters */
 
 import Chance from 'chance';
-
 import type * as GeoJSON from 'geojson';
+
 import {
     Isochrone,
     IsochroneResponseProperties,

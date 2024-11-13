@@ -1,4 +1,5 @@
 import { MockAgent, RequestError, setGlobalDispatcher } from '@iwpnd/rip-ts';
+
 import { randomIsochrone, randomStatus, randomTrip } from './__fixtures__';
 import {
     IsochroneResponse,

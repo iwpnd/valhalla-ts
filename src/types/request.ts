@@ -10,9 +10,9 @@ import {
     BicycleCostingOptions,
     CostingModels,
     CostingOptions,
-    MotorScooterCostingOptions,
     MotorcycleCostingOptions,
     MotorizedVehicleCostingOptions,
+    MotorScooterCostingOptions,
     PedestrianCostingOptions,
     TruckCostingOptions,
 } from './costing';

@@ -1,4 +1,5 @@
 import type * as GeoJSON from 'geojson';
+
 import { UnitsOfDistance } from './base';
 import { SupportedLanguageAlias, SupportedLanguageTags } from './languages';
 import { ResponseLocation } from './locations';
