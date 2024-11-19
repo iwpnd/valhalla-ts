@@ -1,3 +1,14 @@
+## [1.0.16](https://github.com/iwpnd/valhalla-ts/compare/v1.0.15...v1.0.16) (2024-11-19)
+
+### Other
+
+* 🎨 import sorting ([74554b2](https://github.com/iwpnd/valhalla-ts/commit/74554b25e66c0e6909f005016ddd321e2577db8a))
+* **deps-dev:** 🔧 update ([2ace3da](https://github.com/iwpnd/valhalla-ts/commit/2ace3dad81bbcc330b9eedddc91ed431cb25becf))
+* **deps-dev:** 🔧 update ([a681e09](https://github.com/iwpnd/valhalla-ts/commit/a681e094a720931107720eb223982c16e0d1a1e9))
+* **deps-dev:** 🔧 update ([be826ab](https://github.com/iwpnd/valhalla-ts/commit/be826aba2255452b5d71b13fc5656c4ca8d3ac17))
+* **deps-dev:** 🔧 update ([70c07b3](https://github.com/iwpnd/valhalla-ts/commit/70c07b31a751b074ba84cf8f4cc642635842b2a4))
+* **deps:** 🔗 bump rip-ts ([2375079](https://github.com/iwpnd/valhalla-ts/commit/23750794ffb4e20cffdee793dd43b7d117f5b3ea))
+
 ## [1.0.15](https://github.com/iwpnd/valhalla-ts/compare/v1.0.14...v1.0.15) (2024-10-24)
 
 ### Other
