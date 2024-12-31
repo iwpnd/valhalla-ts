@@ -1,3 +1,11 @@
+## [1.0.17](https://github.com/iwpnd/valhalla-ts/compare/v1.0.16...v1.0.17) (2024-12-31)
+
+### Other
+
+* **deps-dev:** 🔧 bump node ([0fcaaea](https://github.com/iwpnd/valhalla-ts/commit/0fcaaeaa75fabd9f1b83e8c9773a09e6ff17ddbd))
+* **deps-dev:** 🔧 update ([8fb7a5a](https://github.com/iwpnd/valhalla-ts/commit/8fb7a5a8e969c436fa90018774570074abd82988))
+* **deps:** 🔗 update rip-ts ([23e16e1](https://github.com/iwpnd/valhalla-ts/commit/23e16e12f5f47c9abde933930d8038ad4d44812b))
+
 ## [1.0.16](https://github.com/iwpnd/valhalla-ts/compare/v1.0.15...v1.0.16) (2024-11-19)
 
 ### Other
