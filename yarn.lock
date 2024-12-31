@@ -589,12 +589,12 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@iwpnd/rip-ts@1.1.10":
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/@iwpnd/rip-ts/-/rip-ts-1.1.10.tgz#e31c66a5c5b4d7b84127424a26820124f2028109"
-  integrity sha512-Zz6lGunCNBROPBqBilRi+cdWAgFaMCCUg42kOcvTa4lzenf6ERySGOvl1Z44XuAQzaPLOaQrP1xcY/ghDAzvNw==
+"@iwpnd/rip-ts@1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@iwpnd/rip-ts/-/rip-ts-1.1.11.tgz#816da2e72b9fc882b11e4728636bea81a25886a5"
+  integrity sha512-/xZQE2dmk6z28UIvdmeFDLOZ33gblNo6ZAUnB8rJ/xsb/0wLcRCTDleYm7xTUzZXwnHVNCNgmKfx91CNs7fHDg==
   dependencies:
-    undici "6.21.0"
+    undici "7.2.0"
 
 "@jest/console@^29.7.0":
   version "29.7.0"
@@ -1462,10 +1462,10 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
-"@types/geojson@7946.0.14":
-  version "7946.0.14"
-  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.14.tgz#319b63ad6df705ee2a65a73ef042c8271e696613"
-  integrity sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==
+"@types/geojson@7946.0.15":
+  version "7946.0.15"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.15.tgz#f9d55fd5a0aa2de9dc80b1b04e437538b7298868"
+  integrity sha512-9oSxFzDCT2Rj6DfcHF8G++jxBKS7mBqXl5xrRW+Kbvjry6Uduya2iiwqHPhVXpasAVMBYKkEPGgKhd3+/HZ6xA==
 
 "@types/graceful-fs@^4.1.3":
   version "4.1.9"
@@ -6894,10 +6894,10 @@ undici-types@~5.26.4:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
-undici@6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.21.0.tgz#4b3d3afaef984e07b48e7620c34ed8a285ed4cd4"
-  integrity sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==
+undici@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-7.2.0.tgz#446219e2a57cfcbdc2f135fcfa6dc662b3cae169"
+  integrity sha512-klt+0S55GBViA9nsq48/NSCo4YX5mjydjypxD7UmHh/brMu8h/Mhd/F7qAeoH2NOO8SDTk6kjnTFc4WpzmfYpQ==
 
 unicode-emoji-modifier-base@^1.0.0:
   version "1.0.0"
