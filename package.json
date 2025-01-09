@@ -55,14 +55,14 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "11.0.1",
     "@semantic-release/npm": "12.0.1",
-    "@semantic-release/release-notes-generator": "14.0.2",
+    "@semantic-release/release-notes-generator": "14.0.3",
     "@types/chance": "1.1.6",
     "@types/eslint__js": "8.42.3",
     "@types/estree": "1.0.6",
     "@types/jest": "29.5.14",
     "@types/json-schema": "7.0.15",
-    "@typescript-eslint/eslint-plugin": "8.19.0",
-    "@typescript-eslint/parser": "8.19.0",
+    "@typescript-eslint/eslint-plugin": "8.19.1",
+    "@typescript-eslint/parser": "8.19.1",
     "chance": "1.1.12",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "devmoji": "2.3.0",
@@ -79,10 +79,10 @@
     "pinst": "3.0.0",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
-    "semantic-release": "24.2.0",
+    "semantic-release": "24.2.1",
     "ts-jest": "29.2.5",
-    "typescript": "5.7.2",
-    "typescript-eslint": "8.19.0"
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.19.1"
   },
   "lint-staged": {
     "*.ts": [
