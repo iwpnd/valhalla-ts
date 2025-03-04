@@ -1,3 +1,11 @@
+## [1.0.19](https://github.com/iwpnd/valhalla-ts/compare/v1.0.18...v1.0.19) (2025-03-04)
+
+### Other
+
+* **deps-dev:** 🔧 drop eslint__js types ([d72329e](https://github.com/iwpnd/valhalla-ts/commit/d72329ec29efa7c7a521cd8a67ada005d4d1a4ed))
+* **deps-dev:** 🔧 update ([57e6bb6](https://github.com/iwpnd/valhalla-ts/commit/57e6bb631e6fd638e8df04396001f1fa6e9be6bf))
+* **deps:** 🔗 bump deps rip-ts and geojson ([08b372a](https://github.com/iwpnd/valhalla-ts/commit/08b372a0555433c5b0b1357d6a1c8ea0bc6ba224))
+
 ## [1.0.18](https://github.com/iwpnd/valhalla-ts/compare/v1.0.17...v1.0.18) (2025-01-20)
 
 ### Other
