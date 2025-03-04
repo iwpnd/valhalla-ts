@@ -57,7 +57,6 @@
     "@semantic-release/npm": "12.0.1",
     "@semantic-release/release-notes-generator": "14.0.3",
     "@types/chance": "1.1.6",
-    "@types/eslint__js": "9.14.0",
     "@types/estree": "1.0.6",
     "@types/jest": "29.5.14",
     "@types/json-schema": "7.0.15",
