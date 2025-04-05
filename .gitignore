@@ -7,7 +7,7 @@ coverage
 lerna-debug.log
 .env
 
-./yarn/cache/*
-./yarn
-!./yarn/releases
+.yarn/cache/*
+.yarn/install-state.gz
+!.yarn/releases
 
