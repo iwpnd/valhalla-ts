@@ -3,9 +3,7 @@
   "version": "1.0.20",
   "description": "A nodejs client and helper utilities for valhalla routing engine",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -17,16 +15,11 @@
   "author": "B. Ramser <iwpnd@posteo.de>",
   "contributors": [],
   "license": "MIT",
-  "keywords": [
-    "valhalla",
-    "routing",
-    "http-client"
-  ],
+  "keywords": ["valhalla", "routing", "http-client"],
   "engines": {
     "node": ">=20.x",
     "yarn": "^1.22.x"
   },
-  "private": false,
   "scripts": {
     "prepublishOnly": "pinst --disable && yarn run build",
     "postpublish": "pinst --enable",
@@ -36,7 +29,7 @@
     "lint": "eslint ./src",
     "test": "jest --runInBand --verbose --testMatch '**/*.test.ts' --coverage",
     "format": "prettier --write src/{*.ts,**/*.ts}",
-    "u": "yarn upgrade-interactive --latest",
+    "u": "yarn upgrade-interactive",
     "up": "docker-compose up",
     "down": "docker-compose down",
     "coverage": "FILE=./coverage/lcov-report/index.html; test -f $FILE && open $FILE || echo 'no coverage yet, run yarn test'",
@@ -84,9 +77,7 @@
     "typescript-eslint": "8.28.0"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "prettier --write"
-    ]
-  }
+    "*.ts": ["eslint --fix", "prettier --write"]
+  },
+  "packageManager": "yarn@4.8.1"
 }
