@@ -795,12 +795,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iwpnd/rip-ts@npm:1.1.14":
-  version: 1.1.14
-  resolution: "@iwpnd/rip-ts@npm:1.1.14"
+"@iwpnd/rip-ts@npm:1.1.16":
+  version: 1.1.16
+  resolution: "@iwpnd/rip-ts@npm:1.1.16"
   dependencies:
-    undici: "npm:7.5.0"
-  checksum: 10/3d990ee1d8e17e516d494207d9504f8691429d3b73e155da7536b8ea6dec11d5d5dd57a251d318eff38d7982526ce1660fe2b63916f6c7bcfc3ab58c69475a4c
+    undici: "npm:7.7.0"
+  checksum: 10/cd3f04d242d1dd38130e7e61f0303e7ff1fb077258f0a18c12928cc3ecdca961110efc3f299e17d5ab5a83eb95582304d1a80e04b2286a321f7154a32c4318ee
   languageName: node
   linkType: hard
 
@@ -812,7 +812,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:19.8.1"
     "@eslint/core": "npm:0.14.0"
     "@eslint/js": "npm:9.27.0"
-    "@iwpnd/rip-ts": "npm:1.1.14"
+    "@iwpnd/rip-ts": "npm:1.1.16"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
     "@semantic-release/github": "npm:11.0.2"
@@ -9414,10 +9414,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:7.5.0":
-  version: 7.5.0
-  resolution: "undici@npm:7.5.0"
-  checksum: 10/66b84d69f7648c2fef5d213492d037ef337c74c817c61589aa6abf51bff75ad9c97aba55139724471e967e3efcbce3e9748a72271db4d3421bdfc0ee8143dbe9
+"undici@npm:7.7.0":
+  version: 7.7.0
+  resolution: "undici@npm:7.7.0"
+  checksum: 10/629861f30411f43b276163a9aa3f6b74b70a6fb911f3389220524bfb149003771447ec6779f3d49f8a9cf54f9aa09b5b5c1b35521c25344df48e4f4aae1e21aa
   languageName: node
   linkType: hard
 
