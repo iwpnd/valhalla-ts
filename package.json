@@ -62,7 +62,7 @@
     "@typescript-eslint/eslint-plugin": "8.32.1",
     "@typescript-eslint/parser": "8.32.1",
     "chance": "1.1.13",
-    "conventional-changelog-conventionalcommits": "8.0.0",
+    "conventional-changelog-conventionalcommits": "9.0.0",
     "devmoji": "2.3.0",
     "eslint": "9.27.0",
     "eslint-config-airbnb-base": "15.0.0",
