@@ -1,3 +1,16 @@
+## [1.0.21](https://github.com/iwpnd/valhalla-ts/compare/v1.0.20...v1.0.21) (2025-05-19)
+
+### Other
+
+* 👷 keep cache dir ([8f96812](https://github.com/iwpnd/valhalla-ts/commit/8f9681241e60155d03863cb2abb72dc08766ada9))
+* 👷 prep for yarn berry ([cdc1f5a](https://github.com/iwpnd/valhalla-ts/commit/cdc1f5ad770ef4650838a916947004e9530ef2fb))
+* 👷 release step corepack enable ([7f78efd](https://github.com/iwpnd/valhalla-ts/commit/7f78efdd5376f955c93bc3b6f3e2400abf3067a1))
+* 👷 yarn install immutable ([cbd91a7](https://github.com/iwpnd/valhalla-ts/commit/cbd91a7bbbd0ef1e1c38cc185b2ba43b186699c9))
+* 🔧 upgrade to yarn berry ([f525616](https://github.com/iwpnd/valhalla-ts/commit/f5256169dd9b951baaaf4905126e29a44a429e8e))
+* **deps-dev:** 🔧 update ([b0fb792](https://github.com/iwpnd/valhalla-ts/commit/b0fb7920e48464b166db502f4eb2a9afc41316ab))
+* **deps-dev:** 🔧 update ([1ade9ae](https://github.com/iwpnd/valhalla-ts/commit/1ade9ae0d79fb42ffe5ed18e6560785e42705dda))
+* **deps:** 🔗 update rip ([b2669c7](https://github.com/iwpnd/valhalla-ts/commit/b2669c7646f6d1ae75a098915f6a429ccb0ff5fd))
+
 ## [1.0.20](https://github.com/iwpnd/valhalla-ts/compare/v1.0.19...v1.0.20) (2025-03-24)
 
 ### Other
