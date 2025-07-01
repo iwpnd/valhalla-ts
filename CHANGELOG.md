@@ -1,3 +1,12 @@
+## [1.0.23](https://github.com/iwpnd/valhalla-ts/compare/v1.0.22...v1.0.23) (2025-07-01)
+
+### Other
+
+* 🔧 make dependabot weekly ([4be101f](https://github.com/iwpnd/valhalla-ts/commit/4be101f5a5afa624e9411bdae78fbf315352fd8e))
+* **deps-dev:** 🔧 update ([f9a4de1](https://github.com/iwpnd/valhalla-ts/commit/f9a4de129b2bbc3d16635989826482a3ad50bafa))
+* **deps-dev:** 🔧 update ([b80a4b8](https://github.com/iwpnd/valhalla-ts/commit/b80a4b8754f8518fab5d0dadd51946317bd191d1))
+* **deps:** 🔗 update ([02e6954](https://github.com/iwpnd/valhalla-ts/commit/02e6954108f2dbb9851acd2fcb8844a9aeb901b9))
+
 ## [1.0.22](https://github.com/iwpnd/valhalla-ts/compare/v1.0.21...v1.0.22) (2025-05-19)
 
 ### Other
