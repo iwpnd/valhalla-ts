@@ -64,7 +64,7 @@
     "chance": "1.1.13",
     "conventional-changelog-conventionalcommits": "9.0.0",
     "devmoji": "2.3.0",
-    "eslint": "9.30.0",
+    "eslint": "9.30.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-import-resolver-typescript": "4.4.4",
