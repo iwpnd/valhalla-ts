@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/iwpnd/valhalla-ts/compare/v1.0.25...v1.0.26) (2025-09-20)
+
+### Other
+
+* **deps-dev:** 🔧 update ([e64a3a5](https://github.com/iwpnd/valhalla-ts/commit/e64a3a5a8f9e44ed67e7fc9863235a289c1e2f1c))
+* **deps:** 🔗 update ([ab4f1ca](https://github.com/iwpnd/valhalla-ts/commit/ab4f1cad444a80617c3a43105949cca3c71c2d0a))
+
 ## [1.0.25](https://github.com/iwpnd/valhalla-ts/compare/v1.0.24...v1.0.25) (2025-09-09)
 
 ### Other
