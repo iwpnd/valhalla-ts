@@ -1,3 +1,11 @@
+## [1.0.27](https://github.com/iwpnd/valhalla-ts/compare/v1.0.26...v1.0.27) (2025-10-20)
+
+### Other
+
+* 👷 update ([78f2834](https://github.com/iwpnd/valhalla-ts/commit/78f2834c2aa2d0d6040be2daa4e612bb575f4094))
+* **deps-dev:** 🔧 update ([5e180bd](https://github.com/iwpnd/valhalla-ts/commit/5e180bd2198bbb051c1a90194dd0ab3d2135cc7d))
+* **deps:** bump actions/setup-node from 4 to 5 ([6e6853d](https://github.com/iwpnd/valhalla-ts/commit/6e6853ddc16e7874f892a076ec31d8d4ef715413))
+
 ## [1.0.26](https://github.com/iwpnd/valhalla-ts/compare/v1.0.25...v1.0.26) (2025-09-20)
 
 ### Other
