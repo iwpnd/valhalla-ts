@@ -1,41 +1,48 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - package-ecosystem: "npm"
+    directory: "/"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
     schedule:
-      interval: 'weekly'
+      interval: "weekly"
     groups:
       eslint:
-        dependency-type: 'development'
+        dependency-type: "development"
         patterns:
-          - 'eslint*'
-          - '@typescript-eslint/*'
+          - "eslint*"
+          - "@typescript-eslint/*"
         update-types:
-          - 'major'
-          - 'minor'
+          - "major"
+          - "minor"
       commitlint:
-        dependency-type: 'development'
+        dependency-type: "development"
         patterns:
-          - '@commitlint/*'
+          - "@commitlint/*"
         update-types:
-          - 'major'
-          - 'minor'
+          - "major"
+          - "minor"
       semantic-release:
-        dependency-type: 'development'
+        dependency-type: "development"
         patterns:
-          - 'semantic-release'
-          - '@semantic-release/*'
-          - 'conventional-changelog-conventionalcommits'
+          - "semantic-release"
+          - "@semantic-release/*"
+          - "conventional-changelog-conventionalcommits"
         update-types:
-          - 'major'
-          - 'minor'
-  - package-ecosystem: 'docker'
-    directory: '/'
+          - "major"
+          - "minor"
+  - package-ecosystem: "docker"
+    directory: "/"
+    commit-message:
+      prefix: "build(docker)"
     schedule:
-      interval: 'weekly'
-      day: 'sunday'
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+      interval: "monthly"
+      day: "sunday"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    commit-message:
+      prefix: "ci(gha)"
     schedule:
-      interval: 'monthly'
-      day: 'sunday'
+      interval: "monthly"
+      day: "sunday"
