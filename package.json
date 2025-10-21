@@ -59,8 +59,8 @@
     "@types/estree": "1.0.8",
     "@types/jest": "30.0.0",
     "@types/json-schema": "7.0.15",
-    "@typescript-eslint/eslint-plugin": "8.46.1",
-    "@typescript-eslint/parser": "8.46.1",
+    "@typescript-eslint/eslint-plugin": "8.46.2",
+    "@typescript-eslint/parser": "8.46.2",
     "chance": "1.1.13",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "devmoji": "2.3.0",
@@ -73,14 +73,14 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "husky": "9.1.7",
     "jest": "30.2.0",
-    "lint-staged": "16.2.4",
+    "lint-staged": "16.2.5",
     "pinst": "3.0.0",
     "prettier": "3.6.2",
     "rimraf": "6.0.1",
     "semantic-release": "25.0.1",
     "ts-jest": "29.4.5",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.46.1"
+    "typescript-eslint": "8.46.2"
   },
   "lint-staged": {
     "*.ts": [
