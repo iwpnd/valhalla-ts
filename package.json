@@ -76,7 +76,7 @@
     "lint-staged": "16.2.6",
     "pinst": "3.0.0",
     "prettier": "3.6.2",
-    "rimraf": "6.1.0",
+    "rimraf": "6.1.2",
     "semantic-release": "25.0.2",
     "ts-jest": "29.4.5",
     "typescript": "5.9.3",
