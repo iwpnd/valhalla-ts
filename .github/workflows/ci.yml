@@ -4,7 +4,11 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
   build-lint-test:
     env:
@@ -43,6 +47,7 @@ jobs:
         run: yarn build
       - name: stop valhalla
         run: docker compose down
+
   release:
     needs: build-lint-test
     name: release
