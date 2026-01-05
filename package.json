@@ -46,8 +46,8 @@
     "@types/geojson": "7946.0.16"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.2.0",
-    "@commitlint/config-conventional": "20.2.0",
+    "@commitlint/cli": "20.3.0",
+    "@commitlint/config-conventional": "20.3.0",
     "@eslint/core": "1.0.0",
     "@eslint/js": "9.39.2",
     "@semantic-release/changelog": "6.0.3",
@@ -59,8 +59,8 @@
     "@types/estree": "1.0.8",
     "@types/jest": "30.0.0",
     "@types/json-schema": "7.0.15",
-    "@typescript-eslint/eslint-plugin": "8.50.0",
-    "@typescript-eslint/parser": "8.50.0",
+    "@typescript-eslint/eslint-plugin": "8.51.0",
+    "@typescript-eslint/parser": "8.51.0",
     "chance": "1.1.13",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "devmoji": "2.3.0",
@@ -80,7 +80,7 @@
     "semantic-release": "25.0.2",
     "ts-jest": "29.4.6",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.50.0"
+    "typescript-eslint": "8.51.0"
   },
   "lint-staged": {
     "*.ts": [
