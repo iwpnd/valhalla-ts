@@ -1,3 +1,19 @@
+## [1.0.28](https://github.com/iwpnd/valhalla-ts/compare/v1.0.27...v1.0.28) (2026-01-08)
+
+### Other
+
+* 👷 dependabot config ([3bcbef5](https://github.com/iwpnd/valhalla-ts/commit/3bcbef5e6a795e873558c7d260ea569a2a8af45d))
+* 👷 fix semantic release with oicd ([458b0a5](https://github.com/iwpnd/valhalla-ts/commit/458b0a578b9ecddef55c68f71b13c7dceb5784c5))
+* **deps-dev:** 🔧 update ([4bbafe2](https://github.com/iwpnd/valhalla-ts/commit/4bbafe2ac521ff101505df03d2c1c14824525c63))
+* **deps-dev:** 🔧 update ([02f59d0](https://github.com/iwpnd/valhalla-ts/commit/02f59d044d76953944b3e3bfb24ea31c87dc6733))
+* **deps-dev:** 🔧 update ([ef79258](https://github.com/iwpnd/valhalla-ts/commit/ef792585ee0084a3f694f5a7b2c224681a8c6dbe))
+* **deps-dev:** 🔧 update ([2a1e40f](https://github.com/iwpnd/valhalla-ts/commit/2a1e40f445e90a8af6e39d0f0b28f875c354772d))
+* **deps-dev:** 🔧 update ([bbbe068](https://github.com/iwpnd/valhalla-ts/commit/bbbe0689b48fcfd33224422f52e2a050776c9a5d))
+* **deps-dev:** bump lint-staged from 16.2.5 to 16.2.6 ([4ed9c18](https://github.com/iwpnd/valhalla-ts/commit/4ed9c1806384788a6e17c008d8db99652b78fdf0))
+* **deps-dev:** update ([84337d7](https://github.com/iwpnd/valhalla-ts/commit/84337d78f1699a40bd10ca2d2099abde4ec4d188))
+* **deps:** 🔗 update rip-ts ([21a20f5](https://github.com/iwpnd/valhalla-ts/commit/21a20f51a031886ca56ac33ffc2812f8799e3df4))
+* **gha:** bump actions/checkout from 5 to 6 ([9b1b825](https://github.com/iwpnd/valhalla-ts/commit/9b1b8259497f9b19d58432f9a01f858589479f33))
+
 ## [1.0.27](https://github.com/iwpnd/valhalla-ts/compare/v1.0.26...v1.0.27) (2025-10-20)
 
 ### Other
