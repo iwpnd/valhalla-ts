@@ -125,7 +125,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Benjamin Ramser - [@iwpnd](https://twitter.com/iwpnd) - iwpnd@posteo.com
+Benjamin Ramser - [@iwpnd](https://bsky.app/profile/iwpnd.bsky.social) - iwpnd@posteo.com
 
 Project Link: [https://github.com/iwpnd/valhalla-ts](https://github.com/iwpnd/valhalla-ts)
 
