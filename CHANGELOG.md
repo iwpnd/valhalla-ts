@@ -1,3 +1,17 @@
+## [1.0.29](https://github.com/iwpnd/valhalla-ts/compare/v1.0.28...v1.0.29) (2026-02-12)
+
+### Other
+
+* 🔧 bump node min version to >24 ([c703e02](https://github.com/iwpnd/valhalla-ts/commit/c703e023f0fd14ee3cfc95f8c186c32134b4f6ac))
+* 🔧 revert update to eslint until typescript-eslint caught up ([75dc279](https://github.com/iwpnd/valhalla-ts/commit/75dc279d562bf5790b474d3984b3249ba9c9214a))
+* 🔧 update nvmrc ([99ea20d](https://github.com/iwpnd/valhalla-ts/commit/99ea20d0e7f9c59243808581e13fa120ca687aad))
+* **deps-dev:** 🔧 update ([98831d2](https://github.com/iwpnd/valhalla-ts/commit/98831d21a89e9df92cce0afbb73fdd7be35bddf0))
+* **deps:** 🔗 update ([03c99a2](https://github.com/iwpnd/valhalla-ts/commit/03c99a26fd5dd681d65e25563879cf000d6cb75a))
+
+### Documentation
+
+* 📚️ update readme ([e09d32a](https://github.com/iwpnd/valhalla-ts/commit/e09d32a4d91db52e214f123a5bc4d84ef8640af2))
+
 ## [1.0.28](https://github.com/iwpnd/valhalla-ts/compare/v1.0.27...v1.0.28) (2026-01-08)
 
 ### Other
