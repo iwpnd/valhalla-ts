@@ -23,7 +23,7 @@
     "http-client"
   ],
   "engines": {
-    "node": ">=20.x",
+    "node": ">=24.x",
     "yarn": "^1.22.x"
   },
   "scripts": {
