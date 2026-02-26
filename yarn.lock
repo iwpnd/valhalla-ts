@@ -817,12 +817,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iwpnd/rip-ts@npm:1.2.1":
-  version: 1.2.1
-  resolution: "@iwpnd/rip-ts@npm:1.2.1"
+"@iwpnd/rip-ts@npm:1.2.2":
+  version: 1.2.2
+  resolution: "@iwpnd/rip-ts@npm:1.2.2"
   dependencies:
-    undici: "npm:7.21.0"
-  checksum: 10/5480ea83530661fed5991ae5e68cd8ca33e68b4f53ac38b4cad1bbfd562420790c9f2f00c3cd0e858f24f42bb4d2febf359dc63c49f7e474e0ae83a369d57003
+    undici: "npm:7.22.0"
+  checksum: 10/079880b1a75ab9148da6c8cb2808102dfb7a12ecd559d90d054f1d90e6bba8ca19a2f814b778037311df7f6e338cdff18cdea9ca68a4888d9f316eaf93556d1e
   languageName: node
   linkType: hard
 
@@ -834,7 +834,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:20.4.2"
     "@eslint/core": "npm:1.1.0"
     "@eslint/js": "npm:9.39.2"
-    "@iwpnd/rip-ts": "npm:1.2.1"
+    "@iwpnd/rip-ts": "npm:1.2.2"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
     "@semantic-release/github": "npm:12.0.6"
@@ -9064,10 +9064,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:7.21.0, undici@npm:^7.0.0":
-  version: 7.21.0
-  resolution: "undici@npm:7.21.0"
-  checksum: 10/2025ba33bd42a22267d0a7f0a9369e4901ef7b7244ed335c79fd4aaa510471d104b6826e74d055077ed57155482fb5cbf716a02f7bba4dbab402087882f40e67
+"undici@npm:7.22.0":
+  version: 7.22.0
+  resolution: "undici@npm:7.22.0"
+  checksum: 10/a7a1813ba4b74c0d46cc8dd160386202c05699ffc487c5d882cf40e6d2435c8d6faff3b8f8675d09bd1ef0386e370675c26b59b9a8c8b3f17b9f82a42236a927
   languageName: node
   linkType: hard
 
@@ -9075,6 +9075,13 @@ __metadata:
   version: 6.23.0
   resolution: "undici@npm:6.23.0"
   checksum: 10/56950995e7b628e62c996430445d17995ca9b70f6f2afe760a63da54205660d968bd08f0741b6f4fb008f40aa35c69cce979cd96ced399585d8c897a76a4f1d1
+  languageName: node
+  linkType: hard
+
+"undici@npm:^7.0.0":
+  version: 7.21.0
+  resolution: "undici@npm:7.21.0"
+  checksum: 10/2025ba33bd42a22267d0a7f0a9369e4901ef7b7244ed335c79fd4aaa510471d104b6826e74d055077ed57155482fb5cbf716a02f7bba4dbab402087882f40e67
   languageName: node
   linkType: hard
 
