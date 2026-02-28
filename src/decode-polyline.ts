@@ -16,9 +16,9 @@ export const decodePolyline = (
     let index = 0;
     let lat = 0;
     let lon = 0;
-    let result = 0;
-    let shift = 0;
-    let byte = null;
+    let result;
+    let shift;
+    let byte;
     let dLatitude: number;
     let dLongitude: number;
 
