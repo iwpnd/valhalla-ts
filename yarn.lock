@@ -853,7 +853,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:8.56.1"
     "@typescript-eslint/parser": "npm:8.56.1"
     chance: "npm:1.1.13"
-    conventional-changelog-conventionalcommits: "npm:9.1.0"
+    conventional-changelog-conventionalcommits: "npm:9.2.0"
     devmoji: "npm:2.3.0"
     eslint: "npm:10.0.2"
     eslint-config-airbnb-base: "npm:15.0.0"
@@ -3188,7 +3188,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:9.1.0, conventional-changelog-conventionalcommits@npm:^9.1.0":
+"conventional-changelog-conventionalcommits@npm:9.2.0":
+  version: 9.2.0
+  resolution: "conventional-changelog-conventionalcommits@npm:9.2.0"
+  dependencies:
+    compare-func: "npm:^2.0.0"
+  checksum: 10/957c841ba9f1ed0ddc7601ca7d6a71cc13d90a9b6d4c347af8f0718febdade75d6cb693a674964a080213ede9b789773c1d225cad13dc6a553feeebe37d02e78
+  languageName: node
+  linkType: hard
+
+"conventional-changelog-conventionalcommits@npm:^9.1.0":
   version: 9.1.0
   resolution: "conventional-changelog-conventionalcommits@npm:9.1.0"
   dependencies:
