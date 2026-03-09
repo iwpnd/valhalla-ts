@@ -680,7 +680,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/core@npm:1.1.0, @eslint/core@npm:^1.1.0":
+"@eslint/core@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@eslint/core@npm:1.1.1"
+  dependencies:
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: 10/e847dd70b4398ba9e732ff50cc14a47114531d6e746c345278998881e6714ca665a1af0056694a18e48d87adec77c5b595b5badde1e55f6671ed5afe731701f7
+  languageName: node
+  linkType: hard
+
+"@eslint/core@npm:^1.1.0":
   version: 1.1.0
   resolution: "@eslint/core@npm:1.1.0"
   dependencies:
@@ -837,7 +846,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": "npm:20.4.2"
     "@commitlint/config-conventional": "npm:20.4.2"
-    "@eslint/core": "npm:1.1.0"
+    "@eslint/core": "npm:1.1.1"
     "@eslint/js": "npm:10.0.1"
     "@iwpnd/rip-ts": "npm:1.2.2"
     "@semantic-release/changelog": "npm:6.0.3"
